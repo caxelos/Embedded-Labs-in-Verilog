@@ -1,0 +1,13 @@
+11:08:57 **** Incremental Build of configuration Debug for project lab3_part3_graycounter ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/lab3_part3_gray.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab3_part3_gray.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../bsp_for_lab3_part3/ps7_cortexa9_0/include -MMD -MP -MF"src/lab3_part3_gray.d" -MT"src/lab3_part3_gray.o" -o "src/lab3_part3_gray.o" "../src/lab3_part3_gray.c"
+../src/lab3_part3_gray.c:1:25: fatal error: xparameters.h: No such file or directory
+compilation terminated.
+make: *** [src/lab3_part3_gray.o] Error 1
+
+11:08:58 Build Finished (took 580ms)
+

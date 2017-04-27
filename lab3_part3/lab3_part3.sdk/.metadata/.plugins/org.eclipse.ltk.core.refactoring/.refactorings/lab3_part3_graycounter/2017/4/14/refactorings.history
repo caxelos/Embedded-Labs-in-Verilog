@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;lab3_part3_graycounter/src/lab3_custom.c&apos; to &apos;lab3_part3_gray.c&apos;" description="Rename resource &apos;lab3_custom.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/lab3_custom.c" name="lab3_part3_gray.c" stamp="1491291387934" updateReferences="true"/>
+</session>
