@@ -29,7 +29,7 @@ module matrix_multiplication(
  // output wire [N-1 : 0] Ymem [0 : 1023]
   output reg ENABLE, 
   //output wire [1024*32-1 : 0] memOut
-  output wire [10*32-1 : 0] memOut
+  output wire [0 :10*32-1] memOut
 );
   parameter A = 2;
   
@@ -40,8 +40,8 @@ module matrix_multiplication(
   parameter OUTPUT_SEND = 4;
   
   
-  reg [31 : 0] Ymem [0 : 9];//Ymem [0 : 1023];
-  reg [31:0] Xmem [0 : 9];//[0 : 1023];
+ (*ram_style = "block"*) reg [31 : 0] Ymem [0 : 9];//Ymem [0 : 1023];
+ (*ram_style = "block"*) reg [31:0] Xmem [0 : 9];//[0 : 1023];
   reg [3:0] counter, size;//reg [9: 0] counter, size;// 0 until 1023 so we need log(1024) = 32;
   reg [1:0] state;
   // afto einai gia anathesi sta Xmem molis energopoihthei to sima
@@ -51,7 +51,7 @@ module matrix_multiplication(
   genvar i; generate
   //for (i = 1; i <= 1024; i = i + 1) begin: YmemOut
   for (i = 1; i <= 10; i = i + 1) begin: YmemOut
-    assign memOut[i*32-1:(i-1)*32] = Ymem[i-1];
+    assign memOut[(i-1)*32 : i*32-1] = Ymem[i-1];
   end
   endgenerate
   
