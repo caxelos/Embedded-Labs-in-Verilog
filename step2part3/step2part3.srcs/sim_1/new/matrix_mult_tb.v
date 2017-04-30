@@ -25,7 +25,7 @@ module matrix_mult_tb;
 
   parameter N = 32;
  
-  wire [10*32-1 : 0] memOut;//wire [1024*32-1 : 0] memOut ;
+  wire [0 : 10*32-1 ] memOut;//wire [1024*32-1 : 0] memOut ;
   wire [9:0] size;
   wire ENABLE;
   
