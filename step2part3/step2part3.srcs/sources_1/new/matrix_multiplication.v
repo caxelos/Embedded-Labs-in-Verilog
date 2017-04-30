@@ -40,8 +40,8 @@ module matrix_multiplication(
   parameter OUTPUT_SEND = 4;
   
   
- (*ram_style = "block"*) reg [31 : 0] Ymem [0 : 9];//Ymem [0 : 1023];
- (*ram_style = "block"*) reg [31:0] Xmem [0 : 9];//[0 : 1023];
+  reg [31 : 0] Ymem [0 : 9];//Ymem [0 : 1023];
+  reg [31:0] Xmem [0 : 9];//[0 : 1023];
   reg [3:0] counter, size;//reg [9: 0] counter, size;// 0 until 1023 so we need log(1024) = 32;
   reg [1:0] state;
   // afto einai gia anathesi sta Xmem molis energopoihthei to sima

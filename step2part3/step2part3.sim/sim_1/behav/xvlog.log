@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/trakaros/tou_nikou/step2part3/step2part3.srcs/sources_1/new/matrix_multiplication.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_multiplication
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/trakaros/tou_nikou/step2part3/step2part3.srcs/sim_1/new/matrix_mult_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_mult_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/trakaros/tou_nikou/step2part3/step2part3.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
