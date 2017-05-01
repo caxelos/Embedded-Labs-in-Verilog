@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Sun Apr 30 16:27:00 2017
+| Date         : Mon May  1 20:35:29 2017
 | Host         : trakaros-lemonsqueezy running 64-bit Ubuntu 16.04 LTS
 | Command      : report_utilization -file matrix_multiplication_utilization_synth.rpt -pb matrix_multiplication_utilization_synth.pb
 | Design       : matrix_multiplication
