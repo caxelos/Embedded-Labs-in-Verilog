@@ -1,0 +1,13 @@
+02:12:25 INFO  : Registering command handlers for SDK TCF services
+02:12:36 INFO  : Launching XSCT server: xsct -n -interactive /home/trakaros/tou_nikou/lab4_custom/lab4_custom.sdk/temp_xsdb_launch_script.tcl
+02:12:42 INFO  : XSCT server has started successfully.
+02:12:42 INFO  : Successfully done setting XSCT server connection channel  
+02:12:56 INFO  : Successfully done setting SDK workspace  
+02:12:56 INFO  : Processing command line option -hwspec /home/trakaros/tou_nikou/lab4_custom/lab4_custom.sdk/design_1_wrapper.hdf.
+02:19:38 INFO  : Registering command handlers for SDK TCF services
+02:19:39 INFO  : Launching XSCT server: xsct -n -interactive /home/trakaros/tou_nikou/lab4_custom/lab4_custom.sdk/temp_xsdb_launch_script.tcl
+02:19:40 INFO  : XSCT server has started successfully.
+02:19:40 INFO  : Successfully done setting XSCT server connection channel  
+02:19:40 INFO  : Successfully done setting SDK workspace  
+02:19:40 INFO  : Processing command line option -hwspec /home/trakaros/tou_nikou/lab4_custom/lab4_custom.sdk/design_1_wrapper.hdf.
+02:19:41 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
