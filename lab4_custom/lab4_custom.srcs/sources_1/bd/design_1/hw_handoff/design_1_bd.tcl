@@ -277,7 +277,7 @@ CONFIG.PCW_FCLK_CLK2_BUF {FALSE} \
 CONFIG.PCW_FCLK_CLK3_BUF {FALSE} \
 CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100.000000} \
 CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {150.000000} \
-CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {50.000000} \
+CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {50} \
 CONFIG.PCW_FPGA3_PERIPHERAL_FREQMHZ {50} \
 CONFIG.PCW_FPGA_FCLK0_ENABLE {1} \
 CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {0} \
@@ -602,7 +602,7 @@ CONFIG.PCW_QSPI_GRP_SS1_IO {<Select>} \
 CONFIG.PCW_QSPI_PERIPHERAL_CLKSRC {IO PLL} \
 CONFIG.PCW_QSPI_PERIPHERAL_DIVISOR0 {8} \
 CONFIG.PCW_QSPI_PERIPHERAL_ENABLE {1} \
-CONFIG.PCW_QSPI_PERIPHERAL_FREQMHZ {200.000000} \
+CONFIG.PCW_QSPI_PERIPHERAL_FREQMHZ {200} \
 CONFIG.PCW_QSPI_QSPI_IO {MIO 1 .. 6} \
 CONFIG.PCW_SD0_GRP_CD_ENABLE {0} \
 CONFIG.PCW_SD0_GRP_CD_IO {<Select>} \
@@ -1448,27 +1448,6 @@ CONFIG.NUM_MI {1} \
   # Create address segments
   create_bd_addr_seg -range 0x00010000 -offset 0x43C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs my_multiplierIP_0/S00_AXI/S00_AXI_reg] SEG_my_multiplierIP_0_S00_AXI_reg
 
-  # Perform GUI Layout
-  regenerate_bd_layout -layout_string {
-   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
-#  -string -flagsOSRD
-preplace port DDR -pg 1 -y -130 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -y -110 -defaultsOSRD
-preplace inst my_multiplierIP_0 -pg 1 -lvl 2 -y -40 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -y 160 -defaultsOSRD
-preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -y 120 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 1 -y -20 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 1 4 420J -130 NJ -130 NJ -130 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 440J 30 800
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 450 220 800
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 420
-preplace netloc processing_system7_0_FIXED_IO 1 1 4 440J -120 820J -70 NJ -70 1150J
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 -140 430 -140 810
-preplace netloc ps7_0_axi_periph_M00_AXI 1 1 3 450 -110 NJ -110 1110
-preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 2 1 N
-levelinfo -pg 1 0 220 630 970 1130 1170 -top -160 -bot 270
-",
-}
 
   # Restore current instance
   current_bd_instance $oldCurInst

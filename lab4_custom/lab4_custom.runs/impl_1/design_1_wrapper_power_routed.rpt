@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date             : Tue May  2 02:07:07 2017
+| Date             : Tue May  2 20:51:53 2017
 | Host             : trakaros-lemonsqueezy running 64-bit Ubuntu 16.04 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 1.697  |
-| Dynamic (W)              | 1.539  |
+| Total On-Chip Power (W)  | 1.698  |
+| Dynamic (W)              | 1.541  |
 | Device Static (W)        | 0.158  |
 | Effective TJA (C/W)      | 11.5   |
 | Max Ambient (C)          | 65.4   |
@@ -50,18 +50,18 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.004 |        3 |       --- |             --- |
-| Slice Logic              |     0.001 |     1792 |       --- |             --- |
-|   LUT as Logic           |     0.001 |      479 |     53200 |            0.90 |
-|   Register               |    <0.001 |      901 |    106400 |            0.85 |
+| Slice Logic              |     0.002 |     1813 |       --- |             --- |
+|   LUT as Logic           |     0.001 |      486 |     53200 |            0.91 |
+|   Register               |    <0.001 |      940 |    106400 |            0.88 |
 |   CARRY4                 |    <0.001 |       16 |     13300 |            0.12 |
-|   LUT as Distributed RAM |    <0.001 |       32 |     17400 |            0.18 |
+|   LUT as Distributed RAM |    <0.001 |        5 |     17400 |            0.03 |
 |   LUT as Shift Register  |    <0.001 |       62 |     17400 |            0.36 |
-|   Others                 |     0.000 |      188 |       --- |             --- |
-| Signals                  |     0.002 |     1503 |       --- |             --- |
+|   Others                 |     0.000 |      189 |       --- |             --- |
+| Signals                  |     0.003 |     1519 |       --- |             --- |
 | DSPs                     |    <0.001 |        3 |       220 |            1.36 |
 | PS7                      |     1.532 |        1 |       --- |             --- |
 | Static Power             |     0.158 |          |           |                 |
-| Total                    |     1.697 |          |           |                 |
+| Total                    |     1.698 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.022 |       0.007 |      0.015 |
+| Vccint    |       1.000 |     0.023 |       0.008 |      0.015 |
 | Vccaux    |       1.800 |     0.021 |       0.000 |      0.021 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -147,46 +147,20 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | Name                                             | Power (W) |
 +--------------------------------------------------+-----------+
-| design_1_wrapper                                 |     1.539 |
-|   design_1_i                                     |     1.539 |
+| design_1_wrapper                                 |     1.541 |
+|   design_1_i                                     |     1.541 |
 |     my_multiplierIP_0                            |     0.003 |
-|       inst                                       |     0.002 |
-|         my_multiplierIP_v1_0_S00_AXI_inst        |     0.002 |
+|       inst                                       |     0.003 |
+|         my_multiplierIP_v1_0_S00_AXI_inst        |     0.003 |
 |           MM_inst                                |     0.002 |
 |             Xmem_reg_0_15_0_0                    |    <0.001 |
-|             Xmem_reg_0_15_10_10                  |    <0.001 |
-|             Xmem_reg_0_15_11_11                  |    <0.001 |
-|             Xmem_reg_0_15_12_12                  |    <0.001 |
-|             Xmem_reg_0_15_13_13                  |    <0.001 |
 |             Xmem_reg_0_15_14_14                  |    <0.001 |
-|             Xmem_reg_0_15_15_15                  |    <0.001 |
-|             Xmem_reg_0_15_16_16                  |    <0.001 |
-|             Xmem_reg_0_15_17_17                  |    <0.001 |
-|             Xmem_reg_0_15_18_18                  |    <0.001 |
-|             Xmem_reg_0_15_19_19                  |    <0.001 |
 |             Xmem_reg_0_15_1_1                    |    <0.001 |
-|             Xmem_reg_0_15_20_20                  |    <0.001 |
-|             Xmem_reg_0_15_21_21                  |    <0.001 |
-|             Xmem_reg_0_15_22_22                  |    <0.001 |
-|             Xmem_reg_0_15_23_23                  |    <0.001 |
-|             Xmem_reg_0_15_24_24                  |    <0.001 |
-|             Xmem_reg_0_15_25_25                  |    <0.001 |
-|             Xmem_reg_0_15_26_26                  |    <0.001 |
-|             Xmem_reg_0_15_27_27                  |    <0.001 |
-|             Xmem_reg_0_15_28_28                  |    <0.001 |
-|             Xmem_reg_0_15_29_29                  |    <0.001 |
 |             Xmem_reg_0_15_2_2                    |    <0.001 |
-|             Xmem_reg_0_15_30_30                  |    <0.001 |
-|             Xmem_reg_0_15_31_31                  |    <0.001 |
 |             Xmem_reg_0_15_3_3                    |    <0.001 |
-|             Xmem_reg_0_15_4_4                    |    <0.001 |
-|             Xmem_reg_0_15_5_5                    |    <0.001 |
-|             Xmem_reg_0_15_6_6                    |    <0.001 |
-|             Xmem_reg_0_15_7_7                    |    <0.001 |
-|             Xmem_reg_0_15_8_8                    |    <0.001 |
-|             Xmem_reg_0_15_9_9                    |    <0.001 |
-|     processing_system7_0                         |     1.532 |
-|       inst                                       |     1.532 |
+|           mutt_testbench_inst                    |    <0.001 |
+|     processing_system7_0                         |     1.533 |
+|       inst                                       |     1.533 |
 |     ps7_0_axi_periph                             |     0.004 |
 |       s00_couplers                               |     0.004 |
 |         auto_pc                                  |     0.004 |
@@ -200,7 +174,7 @@ Table of Contents
 |               RD.r_channel_0                     |    <0.001 |
 |                 rd_data_fifo_0                   |    <0.001 |
 |                 transaction_fifo_0               |    <0.001 |
-|               SI_REG                             |     0.002 |
+|               SI_REG                             |     0.001 |
 |                 ar_pipe                          |    <0.001 |
 |                 aw_pipe                          |    <0.001 |
 |                 b_pipe                           |    <0.001 |

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Tue May  2 02:07:06 2017
+| Date         : Tue May  2 20:51:51 2017
 | Host         : trakaros-lemonsqueezy running 64-bit Ubuntu 16.04 LTS
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,28 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 3
-+-----------+----------+-----------------------+------------+
-| Rule      | Severity | Description           | Violations |
-+-----------+----------+-----------------------+------------+
-| TIMING-16 | Warning  | Large setup violation | 3          |
-+-----------+----------+-----------------------+------------+
+             Violations found: 0
++------+----------+-------------+------------+
+| Rule | Severity | Description | Violations |
++------+----------+-------------+------------+
++------+----------+-------------+------------+
 
 2. REPORT DETAILS
 -----------------
-TIMING-16#1 Warning
-Large setup violation  
-There is a large setup violation of -1.038 ns between design_1_i/my_multiplierIP_0/inst/my_multiplierIP_v1_0_S00_AXI_inst/MM_inst/counter_reg[0]/C (clocked by clk_fpga_0) and design_1_i/my_multiplierIP_0/inst/my_multiplierIP_v1_0_S00_AXI_inst/MM_inst/Ymem_reg[5][31]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#2 Warning
-Large setup violation  
-There is a large setup violation of -1.056 ns between design_1_i/my_multiplierIP_0/inst/my_multiplierIP_v1_0_S00_AXI_inst/MM_inst/counter_reg[0]/C (clocked by clk_fpga_0) and design_1_i/my_multiplierIP_0/inst/my_multiplierIP_v1_0_S00_AXI_inst/MM_inst/Ymem_reg[5][29]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#3 Warning
-Large setup violation  
-There is a large setup violation of -1.159 ns between design_1_i/my_multiplierIP_0/inst/my_multiplierIP_v1_0_S00_AXI_inst/MM_inst/counter_reg[0]/C (clocked by clk_fpga_0) and design_1_i/my_multiplierIP_0/inst/my_multiplierIP_v1_0_S00_AXI_inst/MM_inst/Ymem_reg[9][29]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
 

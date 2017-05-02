@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:my_multiplierIP:1.0
-// IP Revision: 2
+// IP Revision: 4
 
 (* X_CORE_INFO = "my_multiplierIP_v1_0,Vivado 2016.4" *)
 (* CHECK_LICENSE_TYPE = "design_1_my_multiplierIP_0_0,my_multiplierIP_v1_0,{}" *)
