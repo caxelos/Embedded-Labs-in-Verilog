@@ -8,3 +8,957 @@ make pre-build main-build
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
+14:53:59 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+../src/matrix_mult.c:2:2: warning: "/*" within comment [-Wcomment]
+  /******************************************************************************
+  ^
+../src/matrix_mult.c:51:24: fatal error: xil_printf.h: No such file or directory
+compilation terminated.
+src/subdir.mk:21: recipe for target 'src/matrix_mult.o' failed
+make: *** [src/matrix_mult.o] Error 1
+14:54:38 **** Auto Build of project Matrix_multiplication_lab4_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_2/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_5/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_3/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/my_multiplierIP_v1_0/src
+make -C ps7_cortexa9_0/libsrc/my_multiplierIP_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling qspips
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_2/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_5/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_3/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/my_multiplierIP_v1_0/src
+make -C ps7_cortexa9_0/libsrc/my_multiplierIP_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling my_multiplierIP...
+Finished building libraries
+14:54:44 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+../src/matrix_mult.c:2:2: warning: "/*" within comment [-Wcomment]
+  /******************************************************************************
+  ^
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22500	   1148	  22568	  46216	   b488	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+14:55:12 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22500	   1148	  22568	  46216	   b488	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+14:56:00 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+../src/matrix_mult.c: In function 'main':
+../src/matrix_mult.c:111:1: error: expected declaration or statement at end of input
+ }
+ ^
+src/subdir.mk:21: recipe for target 'src/matrix_mult.o' failed
+make: *** [src/matrix_mult.o] Error 1
+14:56:05 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22500	   1148	  22568	  46216	   b488	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+14:57:12 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22564	   1148	  22568	  46280	   b4c8	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+14:57:44 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22564	   1148	  22568	  46280	   b4c8	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:00:19 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22564	   1148	  22568	  46280	   b4c8	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:02:12 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22564	   1148	  22568	  46280	   b4c8	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:06:00 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22564	   1148	  22568	  46280	   b4c8	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:06:11 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22564	   1148	  22568	  46280	   b4c8	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:06:15 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22564	   1148	  22568	  46280	   b4c8	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:10:10 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22564	   1148	  22568	  46280	   b4c8	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:10:35 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:17:17 **** Build of project Matrix_multiplication_lab4_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_2/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_5/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_3/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/my_multiplierIP_v1_0/src
+make -C ps7_cortexa9_0/libsrc/my_multiplierIP_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_2/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_5/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_3/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/my_multiplierIP_v1_0/src
+make -C ps7_cortexa9_0/libsrc/my_multiplierIP_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling my_multiplierIP...
+Finished building libraries
+15:17:23 **** Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22564	   1148	  22568	  46280	   b4c8	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:17:33 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:20:03 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+../src/matrix_mult.c: In function 'main':
+../src/matrix_mult.c:86:2: error: expected ';' before '}' token
+src/subdir.mk:21: recipe for target 'src/matrix_mult.o' failed
+  }
+  ^
+make: *** [src/matrix_mult.o] Error 1
+15:20:09 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22576	   1148	  22568	  46292	   b4d4	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:20:18 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:21:21 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22564	   1148	  22568	  46280	   b4c8	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:27:04 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22564	   1148	  22568	  46280	   b4c8	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:35:23 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+../src/matrix_mult.c:50:24: fatal error: xil_printf.h: No such file or directory
+compilation terminated.
+src/subdir.mk:21: recipe for target 'src/matrix_mult.o' failed
+make: *** [src/matrix_mult.o] Error 1
+15:35:57 **** Auto Build of project Matrix_multiplication_lab4_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_2/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_5/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_3/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make include in ps7_cortexa9_0/libsrc/my_multiplierIP_v1_0/src
+make -C ps7_cortexa9_0/libsrc/my_multiplierIP_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling qspips
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling ddrps
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_1/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling standalone
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_2/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_5/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_3/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling coresightps_dcc
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/my_multiplierIP_v1_0/src
+make -C ps7_cortexa9_0/libsrc/my_multiplierIP_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+Compiling my_multiplierIP...
+Finished building libraries
+15:36:05 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22564	   1148	  22568	  46280	   b4c8	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:36:13 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:36:58 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:37:14 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:37:31 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:40:10 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+../src/matrix_mult.c: In function 'main':
+../src/matrix_mult.c:86:2: error: expected ';' before '}' token
+src/subdir.mk:21: recipe for target 'src/matrix_mult.o' failed
+  }
+  ^
+make: *** [src/matrix_mult.o] Error 1
+15:40:16 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22568	   1148	  22568	  46284	   b4cc	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:40:21 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:41:16 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22568	   1148	  22568	  46284	   b4cc	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:41:21 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:42:32 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:49:29 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:50:06 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:50:13 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:51:56 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+15:53:48 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22568	   1148	  22568	  46284	   b4cc	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:54:51 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22568	   1148	  22568	  46284	   b4cc	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+15:55:04 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:36:37 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+../src/matrix_mult.c: In function 'main':
+../src/matrix_mult.c:223:5: error: expected declaration or statement at end of input
+     return 0;
+     ^
+make: *** [src/matrix_mult.o] Error 1
+src/subdir.mk:21: recipe for target 'src/matrix_mult.o' failed
+18:36:47 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22628	   1148	  22568	  46344	   b508	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+18:37:53 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:38:59 **** Incremental Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+18:48:32 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22568	   1148	  22568	  46284	   b4cc	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+09:51:16 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+09:54:29 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+../src/matrix_mult.c:159:2: error: unknown type name 'res'
+ }res it to baud rate
+  ^
+../src/matrix_mult.c:159:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'to'
+ }res it to baud rate
+         ^
+../src/matrix_mult.c:159:9: error: unknown type name 'to'
+src/subdir.mk:21: recipe for target 'src/matrix_mult.o' failed
+make: *** [src/matrix_mult.o] Error 1
+09:54:45 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22756	   1148	  22568	  46472	   b588	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+09:55:23 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22756	   1148	  22568	  46472	   b588	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+09:55:36 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+Finished building: ../src/matrix_mult.c
+ 
+Building target: Matrix_multiplication_lab4.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/lib -o "Matrix_multiplication_lab4.elf"  ./src/matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_multiplication_lab4.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Matrix_multiplication_lab4.elf  |tee "Matrix_multiplication_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22756	   1148	  22568	  46472	   b588	Matrix_multiplication_lab4.elf
+Finished building: Matrix_multiplication_lab4.elf.size
+ 
+12:30:57 **** Auto Build of configuration Debug for project Matrix_multiplication_lab4 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/matrix_mult.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Matrix_multiplication_lab4_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/matrix_mult.d" -MT"src/matrix_mult.o" -o "src/matrix_mult.o" "../src/matrix_mult.c"
+../src/matrix_mult.c: In function 'main':
+../src/matrix_mult.c:120:5: error: 'a' undeclared (first use in this function)
+     a = a+b+c+d+e+g+h+a;
+     ^
+../src/matrix_mult.c:120:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/matrix_mult.c:120:11: error: 'b' undeclared (first use in this function)
+src/subdir.mk:21: recipe for target 'src/matrix_mult.o' failed
+     a = a+b+c+d+e+g+h+a;
+           ^
+../src/matrix_mult.c:120:13: error: 'c' undeclared (first use in this function)
+     a = a+b+c+d+e+g+h+a;
+             ^
+../src/matrix_mult.c:120:15: error: 'd' undeclared (first use in this function)
+     a = a+b+c+d+e+g+h+a;
+               ^
+../src/matrix_mult.c:120:17: error: 'e' undeclared (first use in this function)
+     a = a+b+c+d+e+g+h+a;
+                 ^
+../src/matrix_mult.c:120:19: error: 'g' undeclared (first use in this function)
+     a = a+b+c+d+e+g+h+a;
+                   ^
+../src/matrix_mult.c:120:21: error: 'h' undeclared (first use in this function)
+     a = a+b+c+d+e+g+h+a;
+                     ^
+make: *** [src/matrix_mult.o] Error 1

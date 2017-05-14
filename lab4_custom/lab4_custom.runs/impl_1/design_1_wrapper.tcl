@@ -64,8 +64,8 @@ set rc [catch {
   set_property netlist_only true [get_files /home/trakaros/tou_nikou/lab4_custom/lab4_custom.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp]
   add_files -quiet /home/trakaros/tou_nikou/lab4_custom/lab4_custom.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp
   set_property netlist_only true [get_files /home/trakaros/tou_nikou/lab4_custom/lab4_custom.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp]
-  add_files -quiet /home/trakaros/tou_nikou/lab4_custom/lab4_custom.srcs/sources_1/bd/design_1/ip/design_1_my_multiplierIP_0_0/design_1_my_multiplierIP_0_0.dcp
-  set_property netlist_only true [get_files /home/trakaros/tou_nikou/lab4_custom/lab4_custom.srcs/sources_1/bd/design_1/ip/design_1_my_multiplierIP_0_0/design_1_my_multiplierIP_0_0.dcp]
+  add_files -quiet /home/trakaros/tou_nikou/lab4_custom/lab4_custom.srcs/sources_1/bd/design_1/ip/design_1_my_multiplierIP_0_2/design_1_my_multiplierIP_0_2.dcp
+  set_property netlist_only true [get_files /home/trakaros/tou_nikou/lab4_custom/lab4_custom.srcs/sources_1/bd/design_1/ip/design_1_my_multiplierIP_0_2/design_1_my_multiplierIP_0_2.dcp]
   add_files -quiet /home/trakaros/tou_nikou/lab4_custom/lab4_custom.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp
   set_property netlist_only true [get_files /home/trakaros/tou_nikou/lab4_custom/lab4_custom.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp]
   read_xdc -ref design_1_processing_system7_0_0 -cells inst /home/trakaros/tou_nikou/lab4_custom/lab4_custom.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc

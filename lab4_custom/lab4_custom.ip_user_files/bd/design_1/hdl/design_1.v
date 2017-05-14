@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-//Date        : Tue May  2 20:47:37 2017
+//Date        : Wed May 10 18:22:54 2017
 //Host        : trakaros-lemonsqueezy running 64-bit Ubuntu 16.04 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -137,7 +137,7 @@ module design_1
   wire [0:0]rst_ps7_0_100M_interconnect_aresetn;
   wire [0:0]rst_ps7_0_100M_peripheral_aresetn;
 
-  design_1_my_multiplierIP_0_0 my_multiplierIP_0
+  design_1_my_multiplierIP_0_2 my_multiplierIP_0
        (.s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(ps7_0_axi_periph_M00_AXI_ARADDR[5:0]),
         .s00_axi_aresetn(rst_ps7_0_100M_peripheral_aresetn),

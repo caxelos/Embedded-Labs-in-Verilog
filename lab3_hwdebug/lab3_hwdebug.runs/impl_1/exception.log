@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\user\Desktop\lab3_customIP\lab3_customIP\lab3_customIP.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Άρνηση άδειας

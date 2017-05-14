@@ -1,0 +1,128 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Mar 27 02:20:06 2017
+# Process ID: 6564
+# Current directory: C:/Users/user/Desktop/lab3_customIP/lab3_customIP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15388 C:\Users\user\Desktop\lab3_customIP\lab3_customIP\lab3_customIP.xpr
+# Log file: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/vivado.log
+# Journal file: C:/Users/user/Desktop/lab3_customIP/lab3_customIP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.xpr
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_bd_design {C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd}
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -name rtl_1
+place_ports {LED[1]} T21
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_bd_design {C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd}
+validate_bd_design -force
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+make_wrapper -files [get_files C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd] -top
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_nets led_ip_LED] [get_bd_cells led_ip]
+delete_bd_objs [get_bd_ports LED]
+validate_bd_design
+update_ip_catalog -rebuild
+update_ip_catalog -rebuild
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:led_ip:1.0 led_ip_0
+endgroup
+set_property location {3 1004 389} [get_bd_cells led_ip_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins led_ip_0/S_AXI]
+set_property name led_ip [get_bd_cells led_ip_0]
+startgroup
+create_bd_port -dir O -from 7 -to 0 LED
+connect_bd_net [get_bd_pins /led_ip/LED] [get_bd_ports LED]
+endgroup
+report_ip_status -name ip_status 
+reset_run design_1_processing_system7_0_0_synth_1
+reset_run design_1_xbar_0_synth_1
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+ip_upgrade[get_ips*]
+ip_update[get_ips*]
+ip_status
+delete_bd_objs [get_bd_nets led_ip_LED] [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_cells led_ip]
+delete_bd_objs [get_bd_ports LED]
+update_ip_catalog -rebuild
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:led_ip:1.0 led_ip_0
+endgroup
+set_property location {3 1049 403} [get_bd_cells led_ip_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins led_ip_0/S_AXI]
+set_property name led_ip [get_bd_cells led_ip_0]
+startgroup
+create_bd_port -dir O -from 7 -to 0 LED
+connect_bd_net [get_bd_pins /led_ip/LED] [get_bd_ports LED]
+endgroup
+report_ip_status -name ip_status 
+make_wrapper -files [get_files C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd] -top
+generate_target all [get_files C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_led_ip_0_1_synth_1
+wait_on_run design_1_led_ip_0_1_synth_1
+launch_runs design_1_auto_pc_0_synth_1
+wait_on_run design_1_auto_pc_0_synth_1
+refresh_design
+close_design
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+open_bd_design {C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_nets led_ip_LED] [get_bd_cells led_ip]
+delete_bd_objs [get_bd_ports LED]
+update_ip_catalog -rebuild
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:led_ip:1.0 led_ip_0
+endgroup
+set_property location {4 992 414} [get_bd_cells led_ip_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins led_ip_0/S_AXI]
+set_property name led_ip [get_bd_cells led_ip_0]
+startgroup
+create_bd_port -dir O -from 7 -to 0 LED
+connect_bd_net [get_bd_pins /led_ip/LED] [get_bd_ports LED]
+endgroup
+report_ip_status -name ip_status 
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+make_wrapper -files [get_files C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd] -top
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -name rtl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+open_bd_design {C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {909 526} [get_bd_intf_ports DDR]
+set_property location {1176 509} [get_bd_intf_ports DDR]
+set_property location {1155 534} [get_bd_intf_ports FIXED_IO]
+set_property location {1148 -8} [get_bd_intf_ports btns_5bits]
+save_bd_design
+set_property location {1 440 257} [get_bd_cells rst_ps7_0_100M]
+set_property location {1 429 339} [get_bd_cells rst_ps7_0_100M]
+set_property location {1 413 251} [get_bd_cells rst_ps7_0_100M]
+save_bd_design
+report_ip_status -name ip_status 
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -name rtl_1
+set_property location {3 1015 393} [get_bd_cells led_ip]
+save_bd_design

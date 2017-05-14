@@ -1,0 +1,792 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Mar 27 02:20:06 2017
+# Process ID: 6564
+# Current directory: C:/Users/user/Desktop/lab3_customIP/lab3_customIP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15388 C:\Users\user\Desktop\lab3_customIP\lab3_customIP\lab3_customIP.xpr
+# Log file: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/vivado.log
+# Journal file: C:/Users/user/Desktop/lab3_customIP/lab3_customIP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/lab3_customIP/ip_repo/led_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 808.918 ; gain = 210.418
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library work [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v" into library work [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1]
+[Mon Mar 27 02:21:16 2017] Launched synth_1...
+Run output will be captured here: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/synth_1/runme.log
+open_bd_design {C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - sw_8bit
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - btns_5bit
+Adding cell -- xilinx.com:user:led_ip:1.0 - led_ip
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file <C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 912.617 ; gain = 103.699
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: design_1_wrapper
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:24 ; elapsed = 00:02:31 . Memory (MB): peak = 912.617 ; gain = 702.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_1' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_1' (1#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_led_ip_0_3' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_led_ip_0_3_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_led_ip_0_3' (2#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_led_ip_0_3_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_processing_system7_0_0' (3#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:427]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (4#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1134]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1266]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_XU9C55' (5#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1266]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_14WQB4R' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1398]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_14WQB4R' (6#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1398]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1544]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_0' (7#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (8#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1544]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_0' (9#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (10#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:427]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_100M_0' (11#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' requires 10 connections, but only 7 given [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:396]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_0' (12#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (13#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (14#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:25 ; elapsed = 00:02:32 . Memory (MB): peak = 929.934 ; gain = 719.527
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:26 ; elapsed = 00:02:32 . Memory (MB): peak = 929.934 ; gain = 719.527
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.dcp' for cell 'design_1_i/btns_5bit'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_led_ip_0_3/design_1_led_ip_0_3.dcp' for cell 'design_1_i/led_ip'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/sw_8bit'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 13 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4128]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4135]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4142]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4149]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4156]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5151]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5158]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5165]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5172]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5179]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5186]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5193]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5200]
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/sw_8bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/sw_8bit/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/sw_8bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/sw_8bit/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/btns_5bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/btns_5bit/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/btns_5bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/btns_5bit/U0'
+Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/constrs_1/new/constr1.xdc]
+Finished Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/constrs_1/new/constr1.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:50 ; elapsed = 00:02:49 . Memory (MB): peak = 1302.820 ; gain = 1092.414
+45 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 1302.820 ; gain = 390.203
+place_ports {LED[1]} T21
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library work [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v" into library work [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1]
+[Mon Mar 27 02:23:32 2017] Launched synth_1...
+Run output will be captured here: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/synth_1/runme.log
+open_bd_design {C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd}
+validate_bd_design -force
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/led_ip/axi_awaddr
+
+validate_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1314.438 ; gain = 0.000
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/led_ip/axi_awaddr
+
+Verilog Output written to : C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sw_8bit .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block btns_5bit .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block led_ip .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 1.873 MB.
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library work [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v" into library work [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1]
+[Mon Mar 27 02:29:34 2017] Launched synth_1...
+Run output will be captured here: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1406.570 ; gain = 90.664
+make_wrapper -files [get_files C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd] -top
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/lab3_customIP/ip_repo/led_ip_1.0'.
+report_ip_status -name ip_status
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_nets led_ip_LED] [get_bd_cells led_ip]
+delete_bd_objs [get_bd_ports LED]
+validate_bd_design
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1461.023 ; gain = 0.000
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/lab3_customIP/ip_repo/led_ip_1.0'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/lab3_customIP/ip_repo/led_ip_1.0'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:led_ip:1.0 led_ip_0
+endgroup
+set_property location {3 1004 389} [get_bd_cells led_ip_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins led_ip_0/S_AXI]
+</led_ip_0/S_AXI/S_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+set_property name led_ip [get_bd_cells led_ip_0]
+startgroup
+create_bd_port -dir O -from 7 -to 0 LED
+connect_bd_net [get_bd_pins /led_ip/LED] [get_bd_ports LED]
+endgroup
+report_ip_status -name ip_status 
+reset_run design_1_processing_system7_0_0_synth_1
+reset_run design_1_xbar_0_synth_1
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+Verilog Output written to : C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : <C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] design_1_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sw_8bit .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block btns_5bit .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block led_ip .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 1.873 MB.
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library work [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v" into library work [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1]
+[Mon Mar 27 12:45:06 2017] Launched design_1_processing_system7_0_0_synth_1, design_1_xbar_0_synth_1, design_1_led_ip_0_0_synth_1...
+Run output will be captured here:
+design_1_processing_system7_0_0_synth_1: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/design_1_xbar_0_synth_1/runme.log
+design_1_led_ip_0_0_synth_1: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/design_1_led_ip_0_0_synth_1/runme.log
+[Mon Mar 27 12:45:06 2017] Launched synth_1...
+Run output will be captured here: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1475.441 ; gain = 14.418
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/lab3_customIP/ip_repo/led_ip_1.0'.
+report_ip_status -name ip_status
+ip_upgrade[get_ips*]
+invalid command name "ip_upgradedesign_1_axi_gpio_0_0 design_1_axi_gpio_0_1 design_1_led_ip_0_0 design_1_processing_system7_0_0 design_1_ps7_0_axi_periph_0 design_1_rst_ps7_0_100M_0"
+ip_update[get_ips*]
+invalid command name "ip_updatedesign_1_axi_gpio_0_0 design_1_axi_gpio_0_1 design_1_led_ip_0_0 design_1_processing_system7_0_0 design_1_ps7_0_axi_periph_0 design_1_rst_ps7_0_100M_0"
+ip_status
+invalid command name "ip_status"
+delete_bd_objs [get_bd_nets led_ip_LED] [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_cells led_ip]
+delete_bd_objs [get_bd_ports LED]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/lab3_customIP/ip_repo/led_ip_1.0'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:led_ip:1.0 led_ip_0
+endgroup
+set_property location {3 1049 403} [get_bd_cells led_ip_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins led_ip_0/S_AXI]
+</led_ip_0/S_AXI/S_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+set_property name led_ip [get_bd_cells led_ip_0]
+startgroup
+create_bd_port -dir O -from 7 -to 0 LED
+connect_bd_net [get_bd_pins /led_ip/LED] [get_bd_ports LED]
+endgroup
+report_ip_status -name ip_status 
+make_wrapper -files [get_files C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd] -top
+Verilog Output written to : C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : <C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd> 
+make_wrapper: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1526.199 ; gain = 7.480
+generate_target all [get_files C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sw_8bit .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block btns_5bit .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block led_ip .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_led_ip_0_1_synth_1
+[Mon Mar 27 12:56:45 2017] Launched design_1_led_ip_0_1_synth_1...
+Run output will be captured here: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/design_1_led_ip_0_1_synth_1/runme.log
+wait_on_run design_1_led_ip_0_1_synth_1
+[Mon Mar 27 12:56:45 2017] Waiting for design_1_led_ip_0_1_synth_1 to finish...
+[Mon Mar 27 12:56:51 2017] Waiting for design_1_led_ip_0_1_synth_1 to finish...
+[Mon Mar 27 12:56:56 2017] Waiting for design_1_led_ip_0_1_synth_1 to finish...
+[Mon Mar 27 12:57:01 2017] Waiting for design_1_led_ip_0_1_synth_1 to finish...
+[Mon Mar 27 12:57:11 2017] Waiting for design_1_led_ip_0_1_synth_1 to finish...
+[Mon Mar 27 12:57:21 2017] Waiting for design_1_led_ip_0_1_synth_1 to finish...
+[Mon Mar 27 12:57:32 2017] Waiting for design_1_led_ip_0_1_synth_1 to finish...
+[Mon Mar 27 12:57:32 2017] design_1_led_ip_0_1_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:47 . Memory (MB): peak = 1594.848 ; gain = 0.000
+launch_runs design_1_auto_pc_0_synth_1
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 2.910 MB.
+[Mon Mar 27 12:57:34 2017] Launched design_1_auto_pc_0_synth_1...
+Run output will be captured here: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/design_1_auto_pc_0_synth_1/runme.log
+wait_on_run design_1_auto_pc_0_synth_1
+[Mon Mar 27 12:57:34 2017] Waiting for design_1_auto_pc_0_synth_1 to finish...
+[Mon Mar 27 12:57:40 2017] Waiting for design_1_auto_pc_0_synth_1 to finish...
+[Mon Mar 27 12:57:45 2017] Waiting for design_1_auto_pc_0_synth_1 to finish...
+[Mon Mar 27 12:57:51 2017] Waiting for design_1_auto_pc_0_synth_1 to finish...
+[Mon Mar 27 12:57:56 2017] design_1_auto_pc_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 1594.848 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:10:22 ; elapsed = 10:37:56 . Memory (MB): peak = 1594.848 ; gain = 1384.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_1' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_1' (1#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_led_ip_0_1' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_led_ip_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_led_ip_0_1' (2#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_led_ip_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_processing_system7_0_0' (3#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:426]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1133]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (4#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1133]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1265]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_XU9C55' (5#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1265]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_14WQB4R' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1397]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_14WQB4R' (6#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1397]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1543]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_0' (7#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (8#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1543]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_0' (9#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (10#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:426]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_100M_0' (11#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' requires 10 connections, but only 7 given [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:395]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_0' (12#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (13#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (14#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:10:24 ; elapsed = 10:37:58 . Memory (MB): peak = 1609.023 ; gain = 1398.617
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:10:25 ; elapsed = 10:37:58 . Memory (MB): peak = 1609.023 ; gain = 1398.617
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.dcp' for cell 'design_1_i/btns_5bit'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_led_ip_0_1/design_1_led_ip_0_1.dcp' for cell 'design_1_i/led_ip'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/sw_8bit'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 13 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4128]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4135]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4142]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4149]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4156]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5151]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5158]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5165]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5172]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5179]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5186]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5193]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5200]
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/sw_8bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/sw_8bit/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/sw_8bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/sw_8bit/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/btns_5bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/btns_5bit/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/btns_5bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/btns_5bit/U0'
+Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/constrs_1/new/constr1.xdc]
+Finished Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/constrs_1/new/constr1.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:21 . Memory (MB): peak = 1666.461 ; gain = 71.613
+close_design
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/lab3_customIP/ip_repo/led_ip_1.0'.
+report_ip_status -name ip_status
+open_bd_design {C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_nets led_ip_LED] [get_bd_cells led_ip]
+delete_bd_objs [get_bd_ports LED]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/lab3_customIP/ip_repo/led_ip_1.0'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:led_ip:1.0 led_ip_0
+endgroup
+set_property location {4 992 414} [get_bd_cells led_ip_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins led_ip_0/S_AXI]
+</led_ip_0/S_AXI/S_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+set_property name led_ip [get_bd_cells led_ip_0]
+startgroup
+create_bd_port -dir O -from 7 -to 0 LED
+connect_bd_net [get_bd_pins /led_ip/LED] [get_bd_ports LED]
+endgroup
+report_ip_status -name ip_status 
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+Verilog Output written to : C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v
+Verilog Output written to : C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : <C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sw_8bit .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block btns_5bit .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block led_ip .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 2.910 MB.
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library work [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v" into library work [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1]
+[Mon Mar 27 13:16:47 2017] Launched design_1_led_ip_0_0_synth_1...
+Run output will be captured here: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/design_1_led_ip_0_0_synth_1/runme.log
+[Mon Mar 27 13:16:47 2017] Launched synth_1...
+Run output will be captured here: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1666.461 ; gain = 0.000
+make_wrapper -files [get_files C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd] -top
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: design_1_wrapper
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:11:47 ; elapsed = 10:58:48 . Memory (MB): peak = 1666.461 ; gain = 1456.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_1' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_1' (1#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_led_ip_0_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_led_ip_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_led_ip_0_0' (2#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_led_ip_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_processing_system7_0_0' (3#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:426]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1133]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (4#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1133]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1265]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_XU9C55' (5#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1265]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_14WQB4R' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1397]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_14WQB4R' (6#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1397]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1543]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_0' (7#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (8#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1543]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_0' (9#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (10#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:426]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_100M_0' (11#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' requires 10 connections, but only 7 given [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:395]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_0' (12#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (13#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (14#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:11:48 ; elapsed = 10:58:49 . Memory (MB): peak = 1666.461 ; gain = 1456.055
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:11:48 ; elapsed = 10:58:49 . Memory (MB): peak = 1666.461 ; gain = 1456.055
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.dcp' for cell 'design_1_i/btns_5bit'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_led_ip_0_0/design_1_led_ip_0_0.dcp' for cell 'design_1_i/led_ip'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/sw_8bit'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 13 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4128]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4135]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4142]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4149]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4156]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5151]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5158]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5165]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5172]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5179]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5186]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5193]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5200]
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/sw_8bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/sw_8bit/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/sw_8bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/sw_8bit/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/btns_5bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/btns_5bit/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/btns_5bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/btns_5bit/U0'
+Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/constrs_1/new/constr1.xdc]
+Finished Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/constrs_1/new/constr1.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:11:59 ; elapsed = 10:58:57 . Memory (MB): peak = 1693.527 ; gain = 1483.121
+44 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1693.527 ; gain = 27.066
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Mar 27 13:20:59 2017] Launched impl_1...
+Run output will be captured here: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11324-laptop/dcp_5/design_1_axi_gpio_0_1.edf:4128]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11324-laptop/dcp_5/design_1_axi_gpio_0_1.edf:4135]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11324-laptop/dcp_5/design_1_axi_gpio_0_1.edf:4142]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11324-laptop/dcp_5/design_1_axi_gpio_0_1.edf:4149]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11324-laptop/dcp_5/design_1_axi_gpio_0_1.edf:4156]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11324-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5151]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11324-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5158]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11324-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5165]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11324-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5172]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11324-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5179]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11324-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5186]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11324-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5193]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11324-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5200]
+Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp/design_1_wrapper_early.xdc]
+Finished Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp/design_1_wrapper.xdc]
+Finished Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp/design_1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.635 . Memory (MB): peak = 1693.527 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.660 . Memory (MB): peak = 1693.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1693.527 ; gain = 0.000
+open_bd_design {C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {909 526} [get_bd_intf_ports DDR]
+set_property location {1176 509} [get_bd_intf_ports DDR]
+set_property location {1155 534} [get_bd_intf_ports FIXED_IO]
+set_property location {1148 -8} [get_bd_intf_ports btns_5bits]
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+set_property location {1 440 257} [get_bd_cells rst_ps7_0_100M]
+set_property location {1 429 339} [get_bd_cells rst_ps7_0_100M]
+set_property location {1 413 251} [get_bd_cells rst_ps7_0_100M]
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+report_ip_status -name ip_status 
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: design_1_wrapper
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:13:51 ; elapsed = 11:19:27 . Memory (MB): peak = 2084.223 ; gain = 1873.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_1' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_1' (1#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_led_ip_0_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_led_ip_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_led_ip_0_0' (2#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_led_ip_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_processing_system7_0_0' (3#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:426]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1133]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (4#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1133]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1265]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_XU9C55' (5#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1265]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_14WQB4R' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1397]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_14WQB4R' (6#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1397]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1543]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_auto_pc_0' (7#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (8#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:1543]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_0' (9#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (10#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:426]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_100M_0' (11#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' requires 10 connections, but only 7 given [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:395]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_0' (12#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (13#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (14#1) [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:13:52 ; elapsed = 11:19:28 . Memory (MB): peak = 2084.223 ; gain = 1873.816
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:13:52 ; elapsed = 11:19:28 . Memory (MB): peak = 2084.223 ; gain = 1873.816
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.dcp' for cell 'design_1_i/btns_5bit'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_led_ip_0_0/design_1_led_ip_0_0.dcp' for cell 'design_1_i/led_ip'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/sw_8bit'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 13 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4128]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4135]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4142]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4149]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_4/design_1_axi_gpio_0_1.edf:4156]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5151]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5158]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5165]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5172]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5179]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5186]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5193]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-6564-laptop/dcp_2/design_1_axi_gpio_0_0.edf:5200]
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/sw_8bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/sw_8bit/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/sw_8bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/sw_8bit/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/btns_5bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/btns_5bit/U0'
+Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/btns_5bit/U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/btns_5bit/U0'
+Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/constrs_1/new/constr1.xdc]
+Finished Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/constrs_1/new/constr1.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:14:01 ; elapsed = 11:19:36 . Memory (MB): peak = 2224.059 ; gain = 2013.652
+44 Infos, 28 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2224.059 ; gain = 139.836
+set_property location {3 1015 393} [get_bd_cells led_ip]
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 27 14:04:53 2017...

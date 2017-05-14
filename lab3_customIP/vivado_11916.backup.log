@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Mar 27 14:55:37 2017
+# Process ID: 11916
+# Current directory: C:/Users/user/Desktop/lab3_customIP/lab3_customIP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7700 C:\Users\user\Desktop\lab3_customIP\lab3_customIP\lab3_customIP.xpr
+# Log file: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/vivado.log
+# Journal file: C:/Users/user/Desktop/lab3_customIP/lab3_customIP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/lab3_customIP/ip_repo/led_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 864.816 ; gain = 219.203
+launch_sdk -workspace C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk -hwspec C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk -hwspec C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11848-laptop/dcp_5/design_1_axi_gpio_0_1.edf:4128]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11848-laptop/dcp_5/design_1_axi_gpio_0_1.edf:4135]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11848-laptop/dcp_5/design_1_axi_gpio_0_1.edf:4142]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11848-laptop/dcp_5/design_1_axi_gpio_0_1.edf:4149]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/btns_5bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11848-laptop/dcp_5/design_1_axi_gpio_0_1.edf:4156]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[0]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11848-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5151]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[1]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11848-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5158]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[2]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11848-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5165]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[3]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11848-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5172]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[4]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11848-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5179]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[5]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11848-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5186]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[6]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11848-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5193]
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'design_1_i/sw_8bit/gpio_io_i[7]' is not directly connected to top level port. 'IOSTANDARD' is ignored by Vivado but preserved for implementation tool. [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/.Xil/Vivado-11848-laptop/dcp_3/design_1_axi_gpio_0_0.edf:5200]
+Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-11916-laptop/dcp/design_1_wrapper_early.xdc]
+Finished Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-11916-laptop/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-11916-laptop/dcp/design_1_wrapper.xdc]
+Finished Parsing XDC File [C:/Users/user/Desktop/lab3_customIP/lab3_customIP/.Xil/Vivado-11916-laptop/dcp/design_1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1078.586 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1078.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:47 . Memory (MB): peak = 1198.043 ; gain = 332.797
+file copy -force C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/design_1_wrapper.sysdef C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk -hwspec C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk -hwspec C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk -hwspec C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk -hwspec C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 27 15:11:06 2017...

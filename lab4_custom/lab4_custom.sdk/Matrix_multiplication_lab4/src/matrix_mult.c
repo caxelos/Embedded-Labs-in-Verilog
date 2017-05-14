@@ -1,9 +1,3 @@
-/*
- * matrix_mult.c
- *
- *  Created on: May 2, 2017
- *      Author: root
- */
 /******************************************************************************
 *
 * Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
@@ -51,48 +45,88 @@
  *   ps7_uart    115200 (configured by bootrom/bsp)
  */
 
+#include <stdio.h>
 //#include "platform.h"
 #include "xil_printf.h"
 #include "xparameters.h"
 #include "my_multiplierIP.h"
-//#include "xbasic_types.h"
 #include "xil_io.h"
+
+
 int main()
 {
-	u32 mult_out[10];
+	unsigned int j;
 	int i;
-    unsigned int j;
-    int enable;
-
-    xil_printf("***** Test of my multiplier: ****** \n\r");
-
-    //Give the signal to reset the peripheral
-    MY_MULTIPLIERIP_mWriteReg(0x43C00000, 40, 1);
-
-    //Add 1 second delay
-    for (j = 0; j < 100000000; j++) { };
-
-    //Give the signal to start the peripheral
-    MY_MULTIPLIERIP_mWriteReg(0x43C00000, 40, 0);
-
-    while (enable == 0)  {
-    	 enable = MY_MULTIPLIERIP_mReadReg(0x43C00000, 44);
-    }
-
-    while (1) {
+	int enable;
+	//int ready;
+	const int size = 1024;
+	//int out;
+	int memory[size];
 
 
-    for (i = 0; i < 10; i++) {
-    	mult_out[i] = Xil_In32(XPAR_MY_MULTIPLIERIP_0_S00_AXI_BASEADDR+4*i);
-        xil_printf("mult_out[%d] = %d\n\r", i, mult_out[i]);
-        for (j =0; j < 100000000; j++) { }
+    //init_platform()
+	xil_printf("Start Testing...\n\r");
 
-    }
-    xil_printf("\n\r");
-    }
+
+
+	MY_MULTIPLIERIP_mWriteReg(0x43C00000, 0, 1);
+
+	//delay
+	for (j = 0; j < 100000000; j++) {};
+	//START
+	MY_MULTIPLIERIP_mWriteReg(0x43C00000, 0, 0);
+
+
+	//SIZE
+    MY_MULTIPLIERIP_mWriteReg(0x43C00000, 28, size);
+    MY_MULTIPLIERIP_mWriteReg(0x43C00000, 20, 2); //give size
+
+
+
+
+
+	j = 0;
+	i = 0;
+    MY_MULTIPLIERIP_mWriteReg(0x43C00000, 20, 1); //TRIGGER = 1
+
+	while (0 == MY_MULTIPLIERIP_mReadReg(0x43C00000, 16) ) { //oso ready == 0
+		if (MY_MULTIPLIERIP_mReadReg(0x43C00000, 12) == 1) { // enable 1
+			   MY_MULTIPLIERIP_mWriteReg(0x43C00000, 8, i); // position X[i]
+		       MY_MULTIPLIERIP_mWriteReg(0x43C00000, 4, i); // data X[i]
+
+
+		       i = i + 1;
+		}
+
+		  //MY_MULTIPLIERIP_mWriteReg(0x43C00000, 20, 0); //TRIGGER = 0
+
+	}
+	MY_MULTIPLIERIP_mWriteReg(0x43C00000, 20, 1); //TRIGGER = 1
+
+
+
+	while (enable == 0) {
+		enable = MY_MULTIPLIERIP_mReadReg(0x43C00000, 12);
+	}
+
+
+
+	//write slv_reg2
+	for (i=0; i < size; i++) {
+		MY_MULTIPLIERIP_mWriteReg(0x43C00000, 8, i); //Yi
+		memory[i] = MY_MULTIPLIERIP_mReadReg(0x43C00000, 24); //data out
+
+	}
+    a = a+b+c+d+e+g+h+a;
+
+	for (i=0; i < size; i++) {
+		xil_printf("Mem[%d] = %d\n\r", i, memory[i]);
+
+	}
+	xil_printf("\n\r");
+
+
 
     //cleanup_platform();
     return 0;
 }
-
-

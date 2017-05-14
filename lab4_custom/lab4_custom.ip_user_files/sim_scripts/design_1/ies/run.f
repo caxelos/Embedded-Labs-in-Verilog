@@ -21,11 +21,11 @@
 -endlib
 -makelib ies/xil_defaultlib \
   "../../../bd/design_1/hdl/design_1.v" \
-  "../../../bd/design_1/ipshared/66b8/hdl/mult_testbench.v" \
-  "../../../bd/design_1/ipshared/66b8/src/matrix_multiplication.v" \
-  "../../../bd/design_1/ipshared/66b8/hdl/my_multiplierIP_v1_0_S00_AXI.v" \
-  "../../../bd/design_1/ipshared/66b8/hdl/my_multiplierIP_v1_0.v" \
-  "../../../bd/design_1/ip/design_1_my_multiplierIP_0_0/sim/design_1_my_multiplierIP_0_0.v" \
+  "../../../bd/design_1/ipshared/bd9b/hdl/mult_testbench.v" \
+  "../../../bd/design_1/ipshared/bd9b/src/matrix_multiplication.v" \
+  "../../../bd/design_1/ipshared/bd9b/hdl/my_multiplierIP_v1_0_S00_AXI.v" \
+  "../../../bd/design_1/ipshared/bd9b/hdl/my_multiplierIP_v1_0.v" \
+  "../../../bd/design_1/ip/design_1_my_multiplierIP_0_2/sim/design_1_my_multiplierIP_0_2.v" \
 -endlib
 -makelib ies/generic_baseblocks_v2_1_0 \
   "../../../../lab4_custom.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v" \

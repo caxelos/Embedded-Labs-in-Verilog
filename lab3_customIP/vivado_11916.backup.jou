@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Mar 27 14:55:37 2017
+# Process ID: 11916
+# Current directory: C:/Users/user/Desktop/lab3_customIP/lab3_customIP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7700 C:\Users\user\Desktop\lab3_customIP\lab3_customIP\lab3_customIP.xpr
+# Log file: C:/Users/user/Desktop/lab3_customIP/lab3_customIP/vivado.log
+# Journal file: C:/Users/user/Desktop/lab3_customIP/lab3_customIP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.xpr
+launch_sdk -workspace C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk -hwspec C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk/design_1_wrapper.hdf
+open_run impl_1
+file copy -force C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.runs/impl_1/design_1_wrapper.sysdef C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk -hwspec C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk -hwspec C:/Users/user/Desktop/lab3_customIP/lab3_customIP/lab3_customIP.sdk/design_1_wrapper.hdf
