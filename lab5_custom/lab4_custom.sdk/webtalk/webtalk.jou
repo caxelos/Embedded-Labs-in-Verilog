@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# 
+# Start of session at: Wed May 24 16:47:13 2017
+# Process ID: 25210
+# Current directory: /home/trakaros/tou_nikou/lab5_custom/lab4_custom.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/trakaros/tou_nikou/lab5_custom/lab4_custom.sdk/webtalk/webtalk.log
+# Journal file: /home/trakaros/tou_nikou/lab5_custom/lab4_custom.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
