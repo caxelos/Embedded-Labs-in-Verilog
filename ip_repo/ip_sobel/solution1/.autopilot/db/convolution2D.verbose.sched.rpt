@@ -1,0 +1,333 @@
+
+
+================================================================
+== Vivado HLS Report for 'convolution2D'
+================================================================
+* Date:           Tue May 30 17:47:58 2017
+
+* Version:        2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)
+* Project:        ip_sobel
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.07|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   70|   70|   70|   70|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |             |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1     |   69|   69|        23|          -|          -|     3|    no    |
+        | + Loop 1.1  |   21|   21|         7|          -|          -|     3|    no    |
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 9
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond1)
+3 --> 
+	4  / (!exitcond)
+	2  / (exitcond)
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	3  / true
+* FSM state operations: 
+
+ <State 1>: 1.77ns
+ST_1: res (5)  [1/1] 0.00ns
+:0  %res = alloca i32
+
+ST_1: posx_read (6)  [1/1] 0.00ns
+:1  %posx_read = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %posx)
+
+ST_1: posy_read (7)  [1/1] 0.00ns
+:2  %posy_read = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %posy)
+
+ST_1: StgValue_13 (8)  [1/1] 1.77ns
+:3  store i32 0, i32* %res
+
+ST_1: StgValue_14 (9)  [1/1] 1.77ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:26
+:4  br label %.loopexit
+
+
+ <State 2>: 2.53ns
+ST_2: j (11)  [1/1] 0.00ns
+.loopexit:0  %j = phi i3 [ -1, %0 ], [ %j_2, %.loopexit.loopexit ]
+
+ST_2: j_cast (12)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:26
+.loopexit:1  %j_cast = sext i3 %j to i22
+
+ST_2: exitcond1 (13)  [1/1] 2.07ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:26
+.loopexit:2  %exitcond1 = icmp eq i3 %j, 2
+
+ST_2: empty (14)  [1/1] 0.00ns
+.loopexit:3  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
+
+ST_2: StgValue_19 (15)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:26
+.loopexit:4  br i1 %exitcond1, label %2, label %.preheader.preheader
+
+ST_2: j_2 (17)  [1/1] 2.53ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+.preheader.preheader:0  %j_2 = add i3 %j, 1
+
+ST_2: tmp_cast (18)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:27
+.preheader.preheader:1  %tmp_cast = zext i3 %j_2 to i5
+
+ST_2: StgValue_22 (19)  [1/1] 1.77ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:27
+.preheader.preheader:2  br label %.preheader
+
+ST_2: res_load (52)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:31
+:0  %res_load = load i32* %res
+
+ST_2: StgValue_24 (53)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:31
+:1  ret i32 %res_load
+
+
+ <State 3>: 5.94ns
+ST_3: i (21)  [1/1] 0.00ns
+.preheader:0  %i = phi i3 [ %i_2, %1 ], [ -1, %.preheader.preheader ]
+
+ST_3: exitcond (22)  [1/1] 2.07ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:27
+.preheader:1  %exitcond = icmp eq i3 %i, 2
+
+ST_3: empty_10 (23)  [1/1] 0.00ns
+.preheader:2  %empty_10 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
+
+ST_3: StgValue_28 (24)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:27
+.preheader:3  br i1 %exitcond, label %.loopexit.loopexit, label %1
+
+ST_3: tmp_3_cast (27)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:1  %tmp_3_cast = sext i3 %i to i10
+
+ST_3: tmp_5 (28)  [1/1] 2.84ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:2  %tmp_5 = add i10 %posy_read, %tmp_3_cast
+
+ST_3: tmp1 (29)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:3  %tmp1 = call i20 @_ssdm_op_BitConcatenate.i20.i10.i10(i10 %tmp_5, i10 %posx_read)
+
+ST_3: tmp1_cast_cast (30)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:4  %tmp1_cast_cast = zext i20 %tmp1 to i22
+
+ST_3: tmp_s (31)  [1/1] 3.08ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:5  %tmp_s = add i22 %j_cast, %tmp1_cast_cast
+
+ST_3: i_2 (37)  [1/1] 2.53ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:11  %i_2 = add i3 %i, 1
+
+ST_3: tmp_4_cast (38)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:12  %tmp_4_cast = zext i3 %i_2 to i5
+
+ST_3: tmp_9 (39)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:13  %tmp_9 = call i5 @_ssdm_op_BitConcatenate.i5.i3.i2(i3 %i_2, i2 0)
+
+ST_3: tmp_10 (40)  [1/1] 1.70ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:14  %tmp_10 = sub i5 %tmp_9, %tmp_4_cast
+
+ST_3: tmp_11 (41)  [1/1] 1.70ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:15  %tmp_11 = add i5 %tmp_10, %tmp_cast
+
+ST_3: StgValue_39 (50)  [1/1] 0.00ns
+.loopexit.loopexit:0  br label %.loopexit
+
+
+ <State 4>: 3.25ns
+ST_4: tmp_cast_11 (32)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:6  %tmp_cast_11 = sext i22 %tmp_s to i32
+
+ST_4: tmp_2 (33)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:7  %tmp_2 = zext i32 %tmp_cast_11 to i64
+
+ST_4: input_img_addr (34)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:8  %input_img_addr = getelementptr [1048576 x i8]* %input_img, i64 0, i64 %tmp_2
+
+ST_4: input_img_load (35)  [2/2] 3.25ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:9  %input_img_load = load i8* %input_img_addr, align 1
+
+
+ <State 5>: 3.25ns
+ST_5: input_img_load (35)  [1/2] 3.25ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:9  %input_img_load = load i8* %input_img_addr, align 1
+
+ST_5: tmp_16_cast (42)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:16  %tmp_16_cast = sext i5 %tmp_11 to i64
+
+ST_5: operator_addr (43)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:17  %operator_addr = getelementptr [9 x i32]* %operator, i64 0, i64 %tmp_16_cast
+
+ST_5: operator_load (44)  [2/2] 2.32ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:18  %operator_load = load i32* %operator_addr, align 4
+
+
+ <State 6>: 8.07ns
+ST_6: tmp_3 (36)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:10  %tmp_3 = zext i8 %input_img_load to i32
+
+ST_6: operator_load (44)  [1/2] 2.32ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:18  %operator_load = load i32* %operator_addr, align 4
+
+ST_6: tmp_6 (45)  [3/3] 5.75ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:19  %tmp_6 = mul nsw i32 %tmp_3, %operator_load
+
+
+ <State 7>: 5.75ns
+ST_7: tmp_6 (45)  [2/3] 5.75ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:19  %tmp_6 = mul nsw i32 %tmp_3, %operator_load
+
+
+ <State 8>: 5.75ns
+ST_8: tmp_6 (45)  [1/3] 5.75ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:19  %tmp_6 = mul nsw i32 %tmp_3, %operator_load
+
+
+ <State 9>: 5.21ns
+ST_9: res_load_1 (26)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:0  %res_load_1 = load i32* %res
+
+ST_9: res_1 (46)  [1/1] 3.44ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:20  %res_1 = add nsw i32 %res_load_1, %tmp_6
+
+ST_9: StgValue_55 (47)  [1/1] 1.77ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28
+:21  store i32 %res_1, i32* %res
+
+ST_9: StgValue_56 (48)  [1/1] 0.00ns  loc: ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:27
+:22  br label %.preheader
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	'alloca' operation ('res') [5]  (0 ns)
+	'store' operation of constant 0 on local variable 'res' [8]  (1.77 ns)
+
+ <State 2>: 2.53ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) [11]  (0 ns)
+	'add' operation ('j', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) [17]  (2.53 ns)
+
+ <State 3>: 5.94ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) [21]  (0 ns)
+	'add' operation ('i', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) [37]  (2.53 ns)
+	'sub' operation ('tmp_10', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) [40]  (1.7 ns)
+	'add' operation ('tmp_11', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) [41]  (1.7 ns)
+
+ <State 4>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('input_img_addr', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) [34]  (0 ns)
+	'load' operation ('input_img_load', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) on array 'input_img' [35]  (3.25 ns)
+
+ <State 5>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('input_img_load', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) on array 'input_img' [35]  (3.25 ns)
+
+ <State 6>: 8.07ns
+The critical path consists of the following:
+	'load' operation ('operator_load', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) on array 'operator' [44]  (2.32 ns)
+	'mul' operation ('tmp_6', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) [45]  (5.75 ns)
+
+ <State 7>: 5.75ns
+The critical path consists of the following:
+	'mul' operation ('tmp_6', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) [45]  (5.75 ns)
+
+ <State 8>: 5.75ns
+The critical path consists of the following:
+	'mul' operation ('tmp_6', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) [45]  (5.75 ns)
+
+ <State 9>: 5.21ns
+The critical path consists of the following:
+	'load' operation ('res_load_1', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) on local variable 'res' [26]  (0 ns)
+	'add' operation ('res', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) [46]  (3.44 ns)
+	'store' operation (../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28) of variable 'res', ../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:28 on local variable 'res' [47]  (1.77 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

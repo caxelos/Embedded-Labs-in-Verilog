@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTMG 210-274] Memory 'ip_sobel_vert_opedEe' is read-only, switch it to a ROM." projectName="ip_sobel" solutionName="solution1" date="2017-05-30T17:48:00.131+0300" type="Warning"/>
+        <logs message="WARNING: [RTMG 210-274] Memory 'ip_sobel_horiz_opcud' is read-only, switch it to a ROM." projectName="ip_sobel" solutionName="solution1" date="2017-05-30T17:48:00.092+0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

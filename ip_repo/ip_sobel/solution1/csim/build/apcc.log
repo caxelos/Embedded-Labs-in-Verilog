@@ -1,0 +1,56 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado_HLS/2017.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'root' on host 'trakaros-lemonsqueezy' (Linux_x86_64 version 4.4.0-78-generic) on Tue May 30 16:49:47 EEST 2017
+INFO: [HLS 200-10] On os Ubuntu 16.04 LTS
+INFO: [HLS 200-10] In directory '/home/trakaros/tou_nikou/ip_repo/ip_sobel/solution1/csim/build'
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:50:40: warning: passing 'const int [3][3]' to parameter of type 'int (*)[3]' discards qualifiers [-Wincompatible-pointer-types]
+                        p = (convolution2D(i, j, input_img, horiz_operator))*(convolution2D(i, j, input_img, horiz_operator)) +
+                                                            ^~~~~~~~~~~~~~
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:21:85: note: passing argument to parameter 'operator' here
+int convolution2D(int posy, int posx, const unsigned char input_img[SIZE*SIZE], int operator[3][3]) {
+                                                                                    ^
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:50:89: warning: passing 'const int [3][3]' to parameter of type 'int (*)[3]' discards qualifiers [-Wincompatible-pointer-types]
+                        p = (convolution2D(i, j, input_img, horiz_operator))*(convolution2D(i, j, input_img, horiz_operator)) +
+                                                                                                             ^~~~~~~~~~~~~~
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:21:85: note: passing argument to parameter 'operator' here
+int convolution2D(int posy, int posx, const unsigned char input_img[SIZE*SIZE], int operator[3][3]) {
+                                                                                    ^
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:51:37: warning: passing 'const int [3][3]' to parameter of type 'int (*)[3]' discards qualifiers [-Wincompatible-pointer-types]
+                                (convolution2D(i, j, input_img, vert_operator))*(convolution2D(i, j, input_img, vert_operator));
+                                                                ^~~~~~~~~~~~~
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:21:85: note: passing argument to parameter 'operator' here
+int convolution2D(int posy, int posx, const unsigned char input_img[SIZE*SIZE], int operator[3][3]) {
+                                                                                    ^
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:51:85: warning: passing 'const int [3][3]' to parameter of type 'int (*)[3]' discards qualifiers [-Wincompatible-pointer-types]
+                                (convolution2D(i, j, input_img, vert_operator))*(convolution2D(i, j, input_img, vert_operator));
+                                                                                                                ^~~~~~~~~~~~~
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:21:85: note: passing argument to parameter 'operator' here
+int convolution2D(int posy, int posx, const unsigned char input_img[SIZE*SIZE], int operator[3][3]) {
+                                                                                    ^
+4 warnings generated.
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:50:40: warning: passing 'const int [3][3]' to parameter of type 'int (*)[3]' discards qualifiers [-Wincompatible-pointer-types]
+                        p = (convolution2D(i, j, input_img, horiz_operator))*(convolution2D(i, j, input_img, horiz_operator)) +
+                                                            ^~~~~~~~~~~~~~
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:21:85: note: passing argument to parameter 'operator' here
+int convolution2D(int posy, int posx, const unsigned char input_img[SIZE*SIZE], int operator[3][3]) {
+                                                                                    ^
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:50:89: warning: passing 'const int [3][3]' to parameter of type 'int (*)[3]' discards qualifiers [-Wincompatible-pointer-types]
+                        p = (convolution2D(i, j, input_img, horiz_operator))*(convolution2D(i, j, input_img, horiz_operator)) +
+                                                                                                             ^~~~~~~~~~~~~~
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:21:85: note: passing argument to parameter 'operator' here
+int convolution2D(int posy, int posx, const unsigned char input_img[SIZE*SIZE], int operator[3][3]) {
+                                                                                    ^
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:51:37: warning: passing 'const int [3][3]' to parameter of type 'int (*)[3]' discards qualifiers [-Wincompatible-pointer-types]
+                                (convolution2D(i, j, input_img, vert_operator))*(convolution2D(i, j, input_img, vert_operator));
+                                                                ^~~~~~~~~~~~~
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:21:85: note: passing argument to parameter 'operator' here
+int convolution2D(int posy, int posx, const unsigned char input_img[SIZE*SIZE], int operator[3][3]) {
+                                                                                    ^
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:51:85: warning: passing 'const int [3][3]' to parameter of type 'int (*)[3]' discards qualifiers [-Wincompatible-pointer-types]
+                                (convolution2D(i, j, input_img, vert_operator))*(convolution2D(i, j, input_img, vert_operator));
+                                                                                                                ^~~~~~~~~~~~~
+../../../../../lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c:21:85: note: passing argument to parameter 'operator' here
+int convolution2D(int posy, int posx, const unsigned char input_img[SIZE*SIZE], int operator[3][3]) {
+                                                                                    ^
+4 warnings generated.
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/82251496152187938930
+INFO: [APCC 202-1] APCC is done.

@@ -1,0 +1,8 @@
+ip_sobel_mul_8ns_bkb
+ip_sobel_uitodp_3eOg
+ip_sobel_dsqrt_64fYi
+ip_sobel_mul_32s_g8j
+ip_sobel_horiz_opcud
+ip_sobel_vert_opedEe
+convolution2D
+ip_sobel

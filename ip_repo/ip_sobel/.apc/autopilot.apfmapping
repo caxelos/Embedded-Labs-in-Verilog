@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="helloworld.c" path="/home/trakaros/tou_nikou/lab5_custom/lab4_custom.sdk/sobel_filter/src/helloworld.c"/>
+  </source>
+  <testbench>
+    <originFiles name="hello_test.c" path="/home/trakaros/hello_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
