@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Jun 18 17:47:05 2017
+# Process ID: 9774
+# Current directory: /home/trakaros/tou_nikou/lab5_custom
+# Command line: vivado lab4_custom.xpr
+# Log file: /home/trakaros/tou_nikou/lab5_custom/vivado.log
+# Journal file: /home/trakaros/tou_nikou/lab5_custom/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project lab4_custom.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/trakaros/tou_nikou/ip_repo/my_multiplierIP_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 6027.855 ; gain = 97.457 ; free physical = 184 ; free virtual = 4975
+update_compile_order -fileset sources_1
+open_bd_design {/home/trakaros/tou_nikou/lab5_custom/lab4_custom.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- user.org:user:my_multiplierIP:1.0 - my_multiplierIP_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_1
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file </home/trakaros/tou_nikou/lab5_custom/lab4_custom.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 6141.445 ; gain = 84.590 ; free physical = 125 ; free virtual = 4858
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 18 17:49:14 2017...
