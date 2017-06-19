@@ -1,0 +1,33 @@
+
+*** Running vivado
+    with args -log ip_sobel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ip_sobel.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source ip_sobel.tcl -notrace
+Command: synth_design -top ip_sobel -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11257 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1165.934 ; gain = 68.414 ; free physical = 206 ; free virtual = 3976
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-5809] Error generated from encrypted envelope. [/opt/Xilinx/Vivado/2017.1/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:4847]
+ERROR: [Synth 8-5809] Error generated from encrypted envelope. [/opt/Xilinx/Vivado/2017.1/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:4850]
+ERROR: [Synth 8-5809] Error generated from encrypted envelope. [/opt/Xilinx/Vivado/2017.1/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:4853]
+ERROR: [Synth 8-5809] Error generated from encrypted envelope. [/opt/Xilinx/Vivado/2017.1/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:4860]
+ERROR: [Synth 8-5809] Error generated from encrypted envelope. [/opt/Xilinx/Vivado/2017.1/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:4860]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1207.434 ; gain = 109.914 ; free physical = 213 ; free virtual = 3985
+---------------------------------------------------------------------------------
+synthesize failed
+1 Infos, 0 Warnings, 0 Critical Warnings and 6 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 18 18:26:12 2017...

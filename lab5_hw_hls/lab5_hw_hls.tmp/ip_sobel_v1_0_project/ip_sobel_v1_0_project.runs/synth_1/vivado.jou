@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Jun 18 18:25:34 2017
+# Process ID: 10862
+# Current directory: /home/trakaros/tou_nikou/lab5_hw_hls/lab5_hw_hls.tmp/ip_sobel_v1_0_project/ip_sobel_v1_0_project.runs/synth_1
+# Command line: vivado -log ip_sobel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ip_sobel.tcl
+# Log file: /home/trakaros/tou_nikou/lab5_hw_hls/lab5_hw_hls.tmp/ip_sobel_v1_0_project/ip_sobel_v1_0_project.runs/synth_1/ip_sobel.vds
+# Journal file: /home/trakaros/tou_nikou/lab5_hw_hls/lab5_hw_hls.tmp/ip_sobel_v1_0_project/ip_sobel_v1_0_project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source ip_sobel.tcl -notrace
