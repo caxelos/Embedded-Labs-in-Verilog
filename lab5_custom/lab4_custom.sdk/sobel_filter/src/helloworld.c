@@ -1,7 +1,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-#define SIZE 50
+#define SIZE 1024
 
 void ip_sobel(unsigned char input_img[SIZE*SIZE], unsigned char output_img[SIZE*SIZE]);//, unsigned char golden);
 //int convolution2D(int posy, int posx, const unsigned char input_img[SIZE*SIZE], int operator[3][3]);

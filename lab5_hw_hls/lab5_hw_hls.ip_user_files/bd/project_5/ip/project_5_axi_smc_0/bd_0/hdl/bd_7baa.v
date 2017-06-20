@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.1 (lin64) Build 1846317 Fri Apr 14 18:54:47 MDT 2017
-//Date        : Mon Jun 19 21:31:14 2017
+//Date        : Tue Jun 20 14:16:24 2017
 //Host        : trakaros-lemonsqueezy running 64-bit Ubuntu 16.04 LTS
 //Command     : generate_target bd_7baa.bd
 //Design      : bd_7baa
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "bd_7baa,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_7baa,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=40,numReposBlks=32,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "project_5_axi_smc_0.hwdef" *) 
+(* CORE_GENERATION_INFO = "bd_7baa,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_7baa,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=40,numReposBlks=32,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=Global}" *) (* HW_HANDOFF = "project_5_axi_smc_0.hwdef" *) 
 module bd_7baa
    (M00_AXI_araddr,
     M00_AXI_arburst,
@@ -831,7 +831,7 @@ module bd_7baa
         .m_axi_aresetn(m_axi_aresetn_1),
         .s_axi_aclk(swbd_aclk_net),
         .s_axi_aresetn(swbd_aresetn_net));
-  bd_7baa_m00s2a_1 m00_sc2axi
+  bd_7baa_m00s2a_0 m00_sc2axi
        (.aclk(clk_map_M00_ACLK),
         .m_axi_araddr(m00_sc2axi_M_AXI_ARADDR),
         .m_axi_arcache(m00_sc2axi_M_AXI_ARCACHE),
@@ -896,7 +896,7 @@ module bd_7baa
         .s_sc_w_recv(m00_nodes_M_SC_W_RECV),
         .s_sc_w_req(m00_nodes_M_SC_W_REQ),
         .s_sc_w_send(m00_nodes_M_SC_W_SEND));
-  bd_7baa_s00a2s_1 s00_axi2sc
+  bd_7baa_s00a2s_0 s00_axi2sc
        (.aclk(aclk_1),
         .m_sc_ar_info(S_SC_AR_1_INFO),
         .m_sc_ar_payld(S_SC_AR_1_PAYLD),
@@ -1090,7 +1090,7 @@ module bd_7baa
         .m_sc_resetn(swbd_aresetn_net),
         .s_sc_clk(aclk_1),
         .s_sc_resetn(aresetn_2));
-  bd_7baa_s01a2s_1 s01_axi2sc
+  bd_7baa_s01a2s_0 s01_axi2sc
        (.aclk(aclk_2),
         .m_sc_ar_info(S_SC_AR_2_INFO),
         .m_sc_ar_payld(S_SC_AR_2_PAYLD),
@@ -1403,9 +1403,9 @@ module clk_map_imp_KW9KP0
   assign clk_map_aresetn_net = aresetn;
   assign swbd_aclk = clk_map_aclk_net;
   assign swbd_aresetn[0] = psr_aclk_interconnect_aresetn;
-  bd_7baa_one_1 one
+  bd_7baa_one_0 one
        (.dout(one_dout));
-  bd_7baa_psr_aclk_1 psr_aclk
+  bd_7baa_psr_aclk_0 psr_aclk
        (.aux_reset_in(clk_map_aresetn_net),
         .dcm_locked(1'b1),
         .ext_reset_in(one_dout),
@@ -1709,7 +1709,7 @@ module m00_exit_pipeline_imp_1DWR93Z
   assign s_axi_ruser[1023:0] = s_axi_1_RUSER;
   assign s_axi_rvalid = s_axi_1_RVALID;
   assign s_axi_wready = s_axi_1_WREADY;
-  bd_7baa_m00e_1 m00_exit
+  bd_7baa_m00e_0 m00_exit
        (.aclk(aclk_1),
         .aresetn(aresetn_1),
         .m_axi_araddr(m00_exit_M_AXI_ARADDR),
@@ -2007,7 +2007,7 @@ module m00_nodes_imp_1R7RT9V
   assign m_axi_aresetn_1 = m_axi_aresetn;
   assign s_axi_aclk_1 = s_axi_aclk;
   assign s_axi_aresetn_1 = s_axi_aresetn;
-  bd_7baa_m00arn_1 m00_ar_node
+  bd_7baa_m00arn_0 m00_ar_node
        (.m_sc_aclk(m_axi_aclk_1),
         .m_sc_aresetn(m_axi_aresetn_1),
         .m_sc_info(m00_ar_node_M_SC_INFO),
@@ -2022,7 +2022,7 @@ module m00_nodes_imp_1R7RT9V
         .s_sc_recv(S_SC_AR_1_RECV),
         .s_sc_req(S_SC_AR_1_REQ),
         .s_sc_send(S_SC_AR_1_SEND));
-  bd_7baa_m00awn_1 m00_aw_node
+  bd_7baa_m00awn_0 m00_aw_node
        (.m_axis_arb_tdata(m00_aw_node_M_AXIS_ARB_TDATA),
         .m_axis_arb_tready(m00_aw_node_M_AXIS_ARB_TREADY),
         .m_axis_arb_tvalid(m00_aw_node_M_AXIS_ARB_TVALID),
@@ -2040,7 +2040,7 @@ module m00_nodes_imp_1R7RT9V
         .s_sc_recv(S_SC_AW_1_RECV),
         .s_sc_req(S_SC_AW_1_REQ),
         .s_sc_send(S_SC_AW_1_SEND));
-  bd_7baa_m00bn_1 m00_b_node
+  bd_7baa_m00bn_0 m00_b_node
        (.m_sc_aclk(s_axi_aclk_1),
         .m_sc_aresetn(s_axi_aresetn_1),
         .m_sc_info(m00_b_node_M_SC_INFO),
@@ -2055,7 +2055,7 @@ module m00_nodes_imp_1R7RT9V
         .s_sc_recv(S_SC_B_1_RECV),
         .s_sc_req(S_SC_B_1_REQ),
         .s_sc_send(S_SC_B_1_SEND));
-  bd_7baa_m00rn_1 m00_r_node
+  bd_7baa_m00rn_0 m00_r_node
        (.m_sc_aclk(s_axi_aclk_1),
         .m_sc_aresetn(s_axi_aresetn_1),
         .m_sc_info(m00_r_node_M_SC_INFO),
@@ -2070,7 +2070,7 @@ module m00_nodes_imp_1R7RT9V
         .s_sc_recv(S_SC_R_1_RECV),
         .s_sc_req(S_SC_R_1_REQ),
         .s_sc_send(S_SC_R_1_SEND));
-  bd_7baa_m00wn_1 m00_w_node
+  bd_7baa_m00wn_0 m00_w_node
        (.m_sc_aclk(m_axi_aclk_1),
         .m_sc_aresetn(m_axi_aresetn_1),
         .m_sc_info(m00_w_node_M_SC_INFO),
@@ -2461,7 +2461,7 @@ module s00_entry_pipeline_imp_DJAWNW
   assign s_axi_rresp[1:0] = s_axi_1_RRESP;
   assign s_axi_rvalid = s_axi_1_RVALID;
   assign s_axi_wready = s_axi_1_WREADY;
-  bd_7baa_s00mmu_1 s00_mmu
+  bd_7baa_s00mmu_0 s00_mmu
        (.aclk(aclk_1),
         .aresetn(aresetn_1),
         .m_axi_araddr(s00_mmu_M_AXI_ARADDR),
@@ -2535,7 +2535,7 @@ module s00_entry_pipeline_imp_DJAWNW
         .s_axi_wready(s_axi_1_WREADY),
         .s_axi_wstrb(s_axi_1_WSTRB),
         .s_axi_wvalid(s_axi_1_WVALID));
-  bd_7baa_s00sic_1 s00_si_converter
+  bd_7baa_s00sic_0 s00_si_converter
        (.aclk(aclk_1),
         .aresetn(aresetn_1),
         .m_axi_araddr(s00_si_converter_M_AXI_ARADDR),
@@ -2614,7 +2614,7 @@ module s00_entry_pipeline_imp_DJAWNW
         .s_axi_wstrb(s00_transaction_regulator_M_AXI_WSTRB),
         .s_axi_wuser(s00_transaction_regulator_M_AXI_WUSER),
         .s_axi_wvalid(s00_transaction_regulator_M_AXI_WVALID));
-  bd_7baa_s00tr_1 s00_transaction_regulator
+  bd_7baa_s00tr_0 s00_transaction_regulator
        (.aclk(aclk_1),
         .aresetn(aresetn_1),
         .m_axi_araddr(s00_transaction_regulator_M_AXI_ARADDR),
@@ -2914,7 +2914,7 @@ module s00_nodes_imp_ADYOXY
   assign s00_w_node_M_SC_RECV = M_SC_W_recv[0];
   assign s_sc_clk_1 = s_sc_clk;
   assign s_sc_resetn_1 = s_sc_resetn;
-  bd_7baa_sarn_2 s00_ar_node
+  bd_7baa_sarn_0 s00_ar_node
        (.m_sc_aclk(m_sc_clk_1),
         .m_sc_aresetn(m_sc_resetn_1),
         .m_sc_info(s00_ar_node_M_SC_INFO),
@@ -2929,7 +2929,7 @@ module s00_nodes_imp_ADYOXY
         .s_sc_recv(S_SC_AR_1_RECV),
         .s_sc_req(S_SC_AR_1_REQ),
         .s_sc_send(S_SC_AR_1_SEND));
-  bd_7baa_sawn_2 s00_aw_node
+  bd_7baa_sawn_0 s00_aw_node
        (.m_sc_aclk(m_sc_clk_1),
         .m_sc_aresetn(m_sc_resetn_1),
         .m_sc_info(s00_aw_node_M_SC_INFO),
@@ -2944,7 +2944,7 @@ module s00_nodes_imp_ADYOXY
         .s_sc_recv(S_SC_AW_1_RECV),
         .s_sc_req(S_SC_AW_1_REQ),
         .s_sc_send(S_SC_AW_1_SEND));
-  bd_7baa_sbn_2 s00_b_node
+  bd_7baa_sbn_0 s00_b_node
        (.m_sc_aclk(s_sc_clk_1),
         .m_sc_aresetn(s_sc_resetn_1),
         .m_sc_info(s00_b_node_M_SC_INFO),
@@ -2959,7 +2959,7 @@ module s00_nodes_imp_ADYOXY
         .s_sc_recv(S_SC_B_1_RECV),
         .s_sc_req(S_SC_B_1_REQ),
         .s_sc_send(S_SC_B_1_SEND));
-  bd_7baa_srn_2 s00_r_node
+  bd_7baa_srn_0 s00_r_node
        (.m_sc_aclk(s_sc_clk_1),
         .m_sc_aresetn(s_sc_resetn_1),
         .m_sc_info(s00_r_node_M_SC_INFO),
@@ -2974,7 +2974,7 @@ module s00_nodes_imp_ADYOXY
         .s_sc_recv(S_SC_R_1_RECV),
         .s_sc_req(S_SC_R_1_REQ),
         .s_sc_send(S_SC_R_1_SEND));
-  bd_7baa_swn_2 s00_w_node
+  bd_7baa_swn_0 s00_w_node
        (.m_sc_aclk(m_sc_clk_1),
         .m_sc_aresetn(m_sc_resetn_1),
         .m_sc_info(s00_w_node_M_SC_INFO),
@@ -3362,7 +3362,7 @@ module s01_entry_pipeline_imp_1BND2BS
   assign s_axi_rresp[1:0] = s_axi_1_RRESP;
   assign s_axi_rvalid = s_axi_1_RVALID;
   assign s_axi_wready = s_axi_1_WREADY;
-  bd_7baa_s01mmu_1 s01_mmu
+  bd_7baa_s01mmu_0 s01_mmu
        (.aclk(aclk_1),
         .aresetn(aresetn_1),
         .m_axi_araddr(s01_mmu_M_AXI_ARADDR),
@@ -3436,7 +3436,7 @@ module s01_entry_pipeline_imp_1BND2BS
         .s_axi_wready(s_axi_1_WREADY),
         .s_axi_wstrb(s_axi_1_WSTRB),
         .s_axi_wvalid(s_axi_1_WVALID));
-  bd_7baa_s01sic_1 s01_si_converter
+  bd_7baa_s01sic_0 s01_si_converter
        (.aclk(aclk_1),
         .aresetn(aresetn_1),
         .m_axi_araddr(s01_si_converter_M_AXI_ARADDR),
@@ -3515,7 +3515,7 @@ module s01_entry_pipeline_imp_1BND2BS
         .s_axi_wstrb(s01_transaction_regulator_M_AXI_WSTRB),
         .s_axi_wuser(s01_transaction_regulator_M_AXI_WUSER),
         .s_axi_wvalid(s01_transaction_regulator_M_AXI_WVALID));
-  bd_7baa_s01tr_1 s01_transaction_regulator
+  bd_7baa_s01tr_0 s01_transaction_regulator
        (.aclk(aclk_1),
         .aresetn(aresetn_1),
         .m_axi_araddr(s01_transaction_regulator_M_AXI_ARADDR),
@@ -3815,7 +3815,7 @@ module s01_nodes_imp_1F6WLGW
   assign s01_w_node_M_SC_RECV = M_SC_W_recv[0];
   assign s_sc_clk_1 = s_sc_clk;
   assign s_sc_resetn_1 = s_sc_resetn;
-  bd_7baa_sarn_3 s01_ar_node
+  bd_7baa_sarn_1 s01_ar_node
        (.m_sc_aclk(m_sc_clk_1),
         .m_sc_aresetn(m_sc_resetn_1),
         .m_sc_info(s01_ar_node_M_SC_INFO),
@@ -3830,7 +3830,7 @@ module s01_nodes_imp_1F6WLGW
         .s_sc_recv(S_SC_AR_1_RECV),
         .s_sc_req(S_SC_AR_1_REQ),
         .s_sc_send(S_SC_AR_1_SEND));
-  bd_7baa_sawn_3 s01_aw_node
+  bd_7baa_sawn_1 s01_aw_node
        (.m_sc_aclk(m_sc_clk_1),
         .m_sc_aresetn(m_sc_resetn_1),
         .m_sc_info(s01_aw_node_M_SC_INFO),
@@ -3845,7 +3845,7 @@ module s01_nodes_imp_1F6WLGW
         .s_sc_recv(S_SC_AW_1_RECV),
         .s_sc_req(S_SC_AW_1_REQ),
         .s_sc_send(S_SC_AW_1_SEND));
-  bd_7baa_sbn_3 s01_b_node
+  bd_7baa_sbn_1 s01_b_node
        (.m_sc_aclk(s_sc_clk_1),
         .m_sc_aresetn(s_sc_resetn_1),
         .m_sc_info(s01_b_node_M_SC_INFO),
@@ -3860,7 +3860,7 @@ module s01_nodes_imp_1F6WLGW
         .s_sc_recv(S_SC_B_1_RECV),
         .s_sc_req(S_SC_B_1_REQ),
         .s_sc_send(S_SC_B_1_SEND));
-  bd_7baa_srn_3 s01_r_node
+  bd_7baa_srn_1 s01_r_node
        (.m_sc_aclk(s_sc_clk_1),
         .m_sc_aresetn(s_sc_resetn_1),
         .m_sc_info(s01_r_node_M_SC_INFO),
@@ -3875,7 +3875,7 @@ module s01_nodes_imp_1F6WLGW
         .s_sc_recv(S_SC_R_1_RECV),
         .s_sc_req(S_SC_R_1_REQ),
         .s_sc_send(S_SC_R_1_SEND));
-  bd_7baa_swn_3 s01_w_node
+  bd_7baa_swn_1 s01_w_node
        (.m_sc_aclk(m_sc_clk_1),
         .m_sc_aresetn(m_sc_resetn_1),
         .m_sc_info(s01_w_node_M_SC_INFO),
@@ -4201,7 +4201,7 @@ module switchboards_imp_LSF2KY
   assign r_switchboard_M00_SC_RECV = M00_SC_R_recv[0];
   assign r_switchboard_M01_SC_RECV = M01_SC_R_recv[0];
   assign w_switchboard_M00_SC_RECV = M00_SC_W_recv[1:0];
-  bd_7baa_arsw_1 ar_switchboard
+  bd_7baa_arsw_0 ar_switchboard
        (.aclk(aclk_1),
         .aclken(1'b1),
         .m_sc_info(ar_switchboard_M00_SC_INFO),
@@ -4214,7 +4214,7 @@ module switchboards_imp_LSF2KY
         .s_sc_recv({S01_SC_AR_1_RECV,S00_SC_AR_1_RECV}),
         .s_sc_req({S01_SC_AR_1_REQ,S00_SC_AR_1_REQ}),
         .s_sc_send({S01_SC_AR_1_SEND,S00_SC_AR_1_SEND}));
-  bd_7baa_awsw_1 aw_switchboard
+  bd_7baa_awsw_0 aw_switchboard
        (.aclk(aclk_1),
         .aclken(1'b1),
         .m_sc_info(aw_switchboard_M00_SC_INFO),
@@ -4227,7 +4227,7 @@ module switchboards_imp_LSF2KY
         .s_sc_recv({S01_SC_AW_1_RECV,S00_SC_AW_1_RECV}),
         .s_sc_req({S01_SC_AW_1_REQ,S00_SC_AW_1_REQ}),
         .s_sc_send({S01_SC_AW_1_SEND,S00_SC_AW_1_SEND}));
-  bd_7baa_bsw_1 b_switchboard
+  bd_7baa_bsw_0 b_switchboard
        (.aclk(aclk_1),
         .aclken(1'b1),
         .m_sc_info({b_switchboard_M01_SC_INFO,b_switchboard_M00_SC_INFO}),
@@ -4240,7 +4240,7 @@ module switchboards_imp_LSF2KY
         .s_sc_recv(S00_SC_B_1_RECV),
         .s_sc_req(S00_SC_B_1_REQ),
         .s_sc_send(S00_SC_B_1_SEND));
-  bd_7baa_rsw_1 r_switchboard
+  bd_7baa_rsw_0 r_switchboard
        (.aclk(aclk_1),
         .aclken(1'b1),
         .m_sc_info({r_switchboard_M01_SC_INFO,r_switchboard_M00_SC_INFO}),
@@ -4253,7 +4253,7 @@ module switchboards_imp_LSF2KY
         .s_sc_recv(S00_SC_R_1_RECV),
         .s_sc_req(S00_SC_R_1_REQ),
         .s_sc_send(S00_SC_R_1_SEND));
-  bd_7baa_wsw_1 w_switchboard
+  bd_7baa_wsw_0 w_switchboard
        (.aclk(aclk_1),
         .aclken(1'b1),
         .m_sc_info(w_switchboard_M00_SC_INFO),

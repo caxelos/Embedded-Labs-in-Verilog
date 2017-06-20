@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.1 (lin64) Build 1846317 Fri Apr 14 18:54:47 MDT 2017
-//Date        : Mon Jun 19 21:30:57 2017
+//Date        : Tue Jun 20 14:23:12 2017
 //Host        : trakaros-lemonsqueezy running 64-bit Ubuntu 16.04 LTS
 //Command     : generate_target project_5.bd
 //Design      : project_5
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "project_5,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=project_5,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_ps7_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "project_5.hwdef" *) 
+(* CORE_GENERATION_INFO = "project_5,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=project_5,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=9,da_ps7_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "project_5.hwdef" *) 
 module project_5
    (DDR_addr,
     DDR_ba,
@@ -336,7 +336,7 @@ module project_5
         .S01_AXI_wvalid(ip_sobel_0_m_axi_output_img_WVALID),
         .aclk(processing_system7_0_FCLK_CLK0),
         .aresetn(rst_ps7_0_100M_peripheral_aresetn));
-  project_5_ip_sobel_0_0 ip_sobel_0
+  project_5_ip_sobel_0_1 ip_sobel_0
        (.ap_clk(processing_system7_0_FCLK_CLK0),
         .ap_rst_n(rst_ps7_0_100M_peripheral_aresetn),
         .m_axi_input_img_ARADDR(ip_sobel_0_m_axi_input_img_ARADDR),
@@ -405,10 +405,10 @@ module project_5
         .m_axi_output_img_WREADY(ip_sobel_0_m_axi_output_img_WREADY),
         .m_axi_output_img_WSTRB(ip_sobel_0_m_axi_output_img_WSTRB),
         .m_axi_output_img_WVALID(ip_sobel_0_m_axi_output_img_WVALID),
-        .s_axi_AXILiteS_ARADDR(ps7_0_axi_periph_M00_AXI_ARADDR[3:0]),
+        .s_axi_AXILiteS_ARADDR(ps7_0_axi_periph_M00_AXI_ARADDR[4:0]),
         .s_axi_AXILiteS_ARREADY(ps7_0_axi_periph_M00_AXI_ARREADY),
         .s_axi_AXILiteS_ARVALID(ps7_0_axi_periph_M00_AXI_ARVALID),
-        .s_axi_AXILiteS_AWADDR(ps7_0_axi_periph_M00_AXI_AWADDR[3:0]),
+        .s_axi_AXILiteS_AWADDR(ps7_0_axi_periph_M00_AXI_AWADDR[4:0]),
         .s_axi_AXILiteS_AWREADY(ps7_0_axi_periph_M00_AXI_AWREADY),
         .s_axi_AXILiteS_AWVALID(ps7_0_axi_periph_M00_AXI_AWVALID),
         .s_axi_AXILiteS_BREADY(ps7_0_axi_periph_M00_AXI_BREADY),
@@ -1137,7 +1137,7 @@ module s00_couplers_imp_18C13HN
   assign s00_couplers_to_auto_pc_WLAST = S_AXI_wlast;
   assign s00_couplers_to_auto_pc_WSTRB = S_AXI_wstrb[3:0];
   assign s00_couplers_to_auto_pc_WVALID = S_AXI_wvalid;
-  project_5_auto_pc_2 auto_pc
+  project_5_auto_pc_0 auto_pc
        (.aclk(S_ACLK_1),
         .aresetn(S_ARESETN_1),
         .m_axi_araddr(auto_pc_to_s00_couplers_ARADDR),

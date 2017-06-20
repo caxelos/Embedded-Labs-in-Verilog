@@ -208,12 +208,18 @@ CONFIG.NUM_MI {1} \
   create_bd_addr_seg -range 0x20000000 -offset 0x00000000 [get_bd_addr_spaces ip_sobel_0/Data_m_axi_input_img] [get_bd_addr_segs processing_system7_0/S_AXI_ACP/ACP_DDR_LOWOCM] SEG_processing_system7_0_ACP_DDR_LOWOCM
   create_bd_addr_seg -range 0x20000000 -offset 0x00000000 [get_bd_addr_spaces ip_sobel_0/Data_m_axi_output_img] [get_bd_addr_segs processing_system7_0/S_AXI_ACP/ACP_DDR_LOWOCM] SEG_processing_system7_0_ACP_DDR_LOWOCM
   create_bd_addr_seg -range 0x00400000 -offset 0xE0000000 [get_bd_addr_spaces ip_sobel_0/Data_m_axi_input_img] [get_bd_addr_segs processing_system7_0/S_AXI_ACP/ACP_IOP] SEG_processing_system7_0_ACP_IOP
-  create_bd_addr_seg -range 0x00400000 -offset 0xE0000000 [get_bd_addr_spaces ip_sobel_0/Data_m_axi_output_img] [get_bd_addr_segs processing_system7_0/S_AXI_ACP/ACP_IOP] SEG_processing_system7_0_ACP_IOP
   create_bd_addr_seg -range 0x40000000 -offset 0x40000000 [get_bd_addr_spaces ip_sobel_0/Data_m_axi_input_img] [get_bd_addr_segs processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0] SEG_processing_system7_0_ACP_M_AXI_GP0
-  create_bd_addr_seg -range 0x40000000 -offset 0x40000000 [get_bd_addr_spaces ip_sobel_0/Data_m_axi_output_img] [get_bd_addr_segs processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0] SEG_processing_system7_0_ACP_M_AXI_GP0
   create_bd_addr_seg -range 0x01000000 -offset 0xFC000000 [get_bd_addr_spaces ip_sobel_0/Data_m_axi_input_img] [get_bd_addr_segs processing_system7_0/S_AXI_ACP/ACP_QSPI_LINEAR] SEG_processing_system7_0_ACP_QSPI_LINEAR
   create_bd_addr_seg -range 0x01000000 -offset 0xFC000000 [get_bd_addr_spaces ip_sobel_0/Data_m_axi_output_img] [get_bd_addr_segs processing_system7_0/S_AXI_ACP/ACP_QSPI_LINEAR] SEG_processing_system7_0_ACP_QSPI_LINEAR
   create_bd_addr_seg -range 0x00010000 -offset 0x43C00000 [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs ip_sobel_0/s_axi_AXILiteS/Reg] SEG_ip_sobel_0_Reg
+
+  # Exclude Address Segments
+  create_bd_addr_seg -range 0x00400000 -offset 0xE0000000 [get_bd_addr_spaces ip_sobel_0/Data_m_axi_output_img] [get_bd_addr_segs processing_system7_0/S_AXI_ACP/ACP_IOP] SEG_processing_system7_0_ACP_IOP
+  exclude_bd_addr_seg [get_bd_addr_segs ip_sobel_0/Data_m_axi_output_img/SEG_processing_system7_0_ACP_IOP]
+
+  create_bd_addr_seg -range 0x40000000 -offset 0x40000000 [get_bd_addr_spaces ip_sobel_0/Data_m_axi_output_img] [get_bd_addr_segs processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0] SEG_processing_system7_0_ACP_M_AXI_GP0
+  exclude_bd_addr_seg [get_bd_addr_segs ip_sobel_0/Data_m_axi_output_img/SEG_processing_system7_0_ACP_M_AXI_GP0]
+
 
 
   # Restore current instance

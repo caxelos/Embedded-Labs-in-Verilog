@@ -1,0 +1,135 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (lin64) Build 1846317 Fri Apr 14 18:54:47 MDT 2017
+| Date         : Tue Jun 20 14:10:05 2017
+| Host         : trakaros-lemonsqueezy running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'project_5_ip_sobel_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of project_5_ip_sobel_0_0 (xilinx.com:hls:ip_sobel:1.0) from (Rev. 1706201319) to (Rev. 1706201404)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'project_5_ip_sobel_0_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_AXILiteS_ARADDR' width 5 differs from original width 4
+
+-Upgraded port 's_axi_AXILiteS_AWADDR' width 5 differs from original width 4
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'C_M_AXI_INPUT_IMG_TARGET_ADDR' is no longer present on the upgraded IP 'project_5_ip_sobel_0_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_OUTPUT_IMG_TARGET_ADDR' is no longer present on the upgraded IP 'project_5_ip_sobel_0_0', and cannot be set to '0x00000000'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:hls:ip_sobel:1.0 -user_name project_5_ip_sobel_0_0
+set_property -dict "\
+  CONFIG.C_M_AXI_INPUT_IMG_ARUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_INPUT_IMG_AWUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_INPUT_IMG_BUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_INPUT_IMG_CACHE_VALUE {"0011"} \
+  CONFIG.C_M_AXI_INPUT_IMG_DATA_WIDTH {32} \
+  CONFIG.C_M_AXI_INPUT_IMG_ENABLE_ID_PORTS {false} \
+  CONFIG.C_M_AXI_INPUT_IMG_ENABLE_USER_PORTS {false} \
+  CONFIG.C_M_AXI_INPUT_IMG_ID_WIDTH {1} \
+  CONFIG.C_M_AXI_INPUT_IMG_PROT_VALUE {"000"} \
+  CONFIG.C_M_AXI_INPUT_IMG_RUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_INPUT_IMG_USER_VALUE {0x00000000} \
+  CONFIG.C_M_AXI_INPUT_IMG_WUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_OUTPUT_IMG_ARUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_OUTPUT_IMG_AWUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_OUTPUT_IMG_BUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_OUTPUT_IMG_CACHE_VALUE {"0011"} \
+  CONFIG.C_M_AXI_OUTPUT_IMG_DATA_WIDTH {32} \
+  CONFIG.C_M_AXI_OUTPUT_IMG_ENABLE_ID_PORTS {false} \
+  CONFIG.C_M_AXI_OUTPUT_IMG_ENABLE_USER_PORTS {false} \
+  CONFIG.C_M_AXI_OUTPUT_IMG_ID_WIDTH {1} \
+  CONFIG.C_M_AXI_OUTPUT_IMG_PROT_VALUE {"000"} \
+  CONFIG.C_M_AXI_OUTPUT_IMG_RUSER_WIDTH {1} \
+  CONFIG.C_M_AXI_OUTPUT_IMG_USER_VALUE {0x00000000} \
+  CONFIG.C_M_AXI_OUTPUT_IMG_WUSER_WIDTH {1} \
+  CONFIG.Component_Name {project_5_ip_sobel_0_0} \
+  CONFIG.II {x} \
+  CONFIG.ap_clk.ASSOCIATED_BUSIF {s_axi_AXILiteS:m_axi_input_img:m_axi_output_img} \
+  CONFIG.ap_clk.ASSOCIATED_RESET {ap_rst_n} \
+  CONFIG.ap_clk.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}} \
+  CONFIG.ap_rst_n.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {RST {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}} \
+  CONFIG.ap_rst_n.POLARITY {ACTIVE_LOW} \
+  CONFIG.clk_period {10.000000} \
+  CONFIG.combinational {0} \
+  CONFIG.interrupt.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {INTERRUPT {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}} \
+  CONFIG.interrupt.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.latency {8388626} \
+  CONFIG.m_axi_input_img.ADDR_WIDTH {32} \
+  CONFIG.m_axi_input_img.HAS_BURST {0} \
+  CONFIG.m_axi_input_img.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}} \
+  CONFIG.m_axi_input_img.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi_input_img.MAX_READ_BURST_LENGTH {16} \
+  CONFIG.m_axi_input_img.MAX_WRITE_BURST_LENGTH {16} \
+  CONFIG.m_axi_input_img.NUM_READ_OUTSTANDING {16} \
+  CONFIG.m_axi_input_img.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.m_axi_input_img.PROTOCOL {AXI4} \
+  CONFIG.m_axi_input_img.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.m_axi_input_img.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.m_axi_output_img.ADDR_WIDTH {32} \
+  CONFIG.m_axi_output_img.HAS_BURST {0} \
+  CONFIG.m_axi_output_img.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}} \
+  CONFIG.m_axi_output_img.MAX_BURST_LENGTH {256} \
+  CONFIG.m_axi_output_img.MAX_READ_BURST_LENGTH {16} \
+  CONFIG.m_axi_output_img.MAX_WRITE_BURST_LENGTH {16} \
+  CONFIG.m_axi_output_img.NUM_READ_OUTSTANDING {16} \
+  CONFIG.m_axi_output_img.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.m_axi_output_img.PROTOCOL {AXI4} \
+  CONFIG.m_axi_output_img.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.m_axi_output_img.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.machine {64} \
+  CONFIG.s_axi_AXILiteS.ADDR_WIDTH {4} \
+  CONFIG.s_axi_AXILiteS.DATA_WIDTH {32} \
+  CONFIG.s_axi_AXILiteS.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}} \
+  CONFIG.s_axi_AXILiteS.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi_AXILiteS.READ_WRITE_MODE {READ_WRITE} " [get_ips project_5_ip_sobel_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (lin64) Build 1846317 Fri Apr 14 18:54:47 MDT 2017
+| Date         : Tue Jun 20 13:23:05 2017
+| Host         : trakaros-lemonsqueezy running 64-bit Ubuntu 16.04 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'project_5_ip_sobel_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of project_5_ip_sobel_0_0 (xilinx.com:hls:ip_sobel:1.0) from (Rev. 1706192122) to (Rev. 1706201319)
+

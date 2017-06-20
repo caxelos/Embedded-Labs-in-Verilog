@@ -1015,7 +1015,7 @@
         <spirit:instanceName>s00_axi2sc</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_axi2sc" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s00a2s_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s00a2s_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="READ_WRITE_MODE">READ_WRITE</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="AXI_ADDR_WIDTH">32</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="AXI_ID_WIDTH">2</spirit:configurableElementValue>
@@ -1046,7 +1046,7 @@
         <spirit:instanceName>s01_axi2sc</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_axi2sc" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s01a2s_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s01a2s_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="READ_WRITE_MODE">READ_WRITE</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="AXI_ADDR_WIDTH">32</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="AXI_ID_WIDTH">2</spirit:configurableElementValue>
@@ -1073,7 +1073,7 @@
         <spirit:instanceName>m00_sc2axi</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_sc2axi" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_m00s2a_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_m00s2a_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="READ_WRITE_MODE">READ_WRITE</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="AXI_ADDR_WIDTH">32</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="AXI_ID_WIDTH">2</spirit:configurableElementValue>
@@ -1442,7 +1442,7 @@
         <spirit:instanceName>m00_exit</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_exit" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_m00e_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_m00e_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="READ_WRITE_MODE">READ_WRITE</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="IS_CASCADED">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SSC_ROUTE_WIDTH">2</spirit:configurableElementValue>
@@ -1682,7 +1682,7 @@
         <spirit:instanceName>m00_ar_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_m00arn_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_m00arn_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">2</spirit:configurableElementValue>
@@ -1733,7 +1733,7 @@
         <spirit:instanceName>m00_r_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_m00rn_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_m00rn_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">0</spirit:configurableElementValue>
@@ -1784,7 +1784,7 @@
         <spirit:instanceName>m00_aw_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_m00awn_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_m00awn_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">3</spirit:configurableElementValue>
@@ -1835,7 +1835,7 @@
         <spirit:instanceName>m00_w_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_m00wn_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_m00wn_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">1</spirit:configurableElementValue>
@@ -1887,7 +1887,7 @@
         <spirit:instanceName>m00_b_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_m00bn_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_m00bn_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">4</spirit:configurableElementValue>
@@ -2199,7 +2199,7 @@
         <spirit:instanceName>s01_ar_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_sarn_3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_sarn_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">2</spirit:configurableElementValue>
@@ -2250,7 +2250,7 @@
         <spirit:instanceName>s01_r_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_srn_3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_srn_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">0</spirit:configurableElementValue>
@@ -2302,7 +2302,7 @@
         <spirit:instanceName>s01_aw_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_sawn_3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_sawn_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">3</spirit:configurableElementValue>
@@ -2353,7 +2353,7 @@
         <spirit:instanceName>s01_w_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_swn_3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_swn_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">1</spirit:configurableElementValue>
@@ -2404,7 +2404,7 @@
         <spirit:instanceName>s01_b_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_sbn_3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_sbn_1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">4</spirit:configurableElementValue>
@@ -2616,9 +2616,9 @@
         <spirit:instanceName>s01_mmu</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_mmu" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s01mmu_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s01mmu_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="IS_CASCADED">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="NUM_SEG">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="NUM_SEG">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MSC_ROUTE_WIDTH">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MSC">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="ADDR_WIDTH">32</spirit:configurableElementValue>
@@ -2639,27 +2639,13 @@
           <spirit:configurableElementValue spirit:referenceId="SEG000_SUPPORTS_WRITE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG000_SECURE_READ">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG000_SECURE_WRITE">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG001_BASE_ADDR">0x0000000040000000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG001_SIZE">30</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="SEG001_BASE_ADDR">0x00000000FC000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="SEG001_SIZE">24</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG001_SEP_ROUTE">0b0000000000000000000000000000000000000000000000000000000000000000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG001_SUPPORTS_READ">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG001_SUPPORTS_WRITE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG001_SECURE_READ">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG001_SECURE_WRITE">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG002_BASE_ADDR">0x00000000E0000000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG002_SIZE">22</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG002_SEP_ROUTE">0b0000000000000000000000000000000000000000000000000000000000000000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG002_SUPPORTS_READ">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG002_SUPPORTS_WRITE">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG002_SECURE_READ">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG002_SECURE_WRITE">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG003_BASE_ADDR">0x00000000FC000000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG003_SIZE">24</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG003_SEP_ROUTE">0b0000000000000000000000000000000000000000000000000000000000000000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG003_SUPPORTS_READ">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG003_SUPPORTS_WRITE">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG003_SECURE_READ">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG003_SECURE_WRITE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MSC000_ROUTE">0b1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
@@ -2667,7 +2653,7 @@
         <spirit:instanceName>s01_transaction_regulator</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_transaction_regulator" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s01tr_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s01tr_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="READ_WRITE_MODE">READ_WRITE</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="IS_CASCADED">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MEP_IDENTIFIER">2</spirit:configurableElementValue>
@@ -2685,7 +2671,7 @@
         <spirit:instanceName>s01_si_converter</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_si_converter" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s01sic_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s01sic_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="READ_WRITE_MODE">READ_WRITE</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="LIMIT_READ_LENGTH">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="LIMIT_WRITE_LENGTH">0</spirit:configurableElementValue>
@@ -2695,7 +2681,7 @@
           <spirit:configurableElementValue spirit:referenceId="MEP_IDENTIFIER_WIDTH">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SUPPORTS_NARROW">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="HAS_BURST">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="NUM_SEG">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="NUM_SEG">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="ADDR_WIDTH">32</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="ID_WIDTH">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="RDATA_WIDTH">32</spirit:configurableElementValue>
@@ -2711,12 +2697,6 @@
           <spirit:configurableElementValue spirit:referenceId="SEP001_RDATA_WIDTH">64</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEP001_WDATA_WIDTH">64</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEP001_PROTOCOL">AXI3</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEP002_RDATA_WIDTH">64</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEP002_WDATA_WIDTH">64</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEP002_PROTOCOL">AXI3</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEP003_RDATA_WIDTH">64</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEP003_WDATA_WIDTH">64</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEP003_PROTOCOL">AXI3</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MSC000_RDATA_WIDTH">64</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MSC000_WDATA_WIDTH">64</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -2946,7 +2926,7 @@
         <spirit:instanceName>s00_ar_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_sarn_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_sarn_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">2</spirit:configurableElementValue>
@@ -2997,7 +2977,7 @@
         <spirit:instanceName>s00_r_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_srn_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_srn_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">0</spirit:configurableElementValue>
@@ -3049,7 +3029,7 @@
         <spirit:instanceName>s00_aw_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_sawn_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_sawn_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">3</spirit:configurableElementValue>
@@ -3100,7 +3080,7 @@
         <spirit:instanceName>s00_w_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_swn_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_swn_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">1</spirit:configurableElementValue>
@@ -3151,7 +3131,7 @@
         <spirit:instanceName>s00_b_node</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_node" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_sbn_2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_sbn_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CHANNEL">4</spirit:configurableElementValue>
@@ -3363,9 +3343,9 @@
         <spirit:instanceName>s00_mmu</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_mmu" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s00mmu_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s00mmu_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="IS_CASCADED">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="NUM_SEG">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="NUM_SEG">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MSC_ROUTE_WIDTH">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MSC">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="ADDR_WIDTH">32</spirit:configurableElementValue>
@@ -3386,27 +3366,13 @@
           <spirit:configurableElementValue spirit:referenceId="SEG000_SUPPORTS_WRITE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG000_SECURE_READ">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG000_SECURE_WRITE">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG001_BASE_ADDR">0x0000000040000000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG001_SIZE">30</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="SEG001_BASE_ADDR">0x00000000FC000000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="SEG001_SIZE">24</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG001_SEP_ROUTE">0b0000000000000000000000000000000000000000000000000000000000000000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG001_SUPPORTS_READ">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG001_SUPPORTS_WRITE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG001_SECURE_READ">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEG001_SECURE_WRITE">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG002_BASE_ADDR">0x00000000E0000000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG002_SIZE">22</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG002_SEP_ROUTE">0b0000000000000000000000000000000000000000000000000000000000000000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG002_SUPPORTS_READ">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG002_SUPPORTS_WRITE">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG002_SECURE_READ">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG002_SECURE_WRITE">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG003_BASE_ADDR">0x00000000FC000000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG003_SIZE">24</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG003_SEP_ROUTE">0b0000000000000000000000000000000000000000000000000000000000000000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG003_SUPPORTS_READ">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG003_SUPPORTS_WRITE">1</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG003_SECURE_READ">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEG003_SECURE_WRITE">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MSC000_ROUTE">0b1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
@@ -3414,7 +3380,7 @@
         <spirit:instanceName>s00_transaction_regulator</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_transaction_regulator" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s00tr_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s00tr_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="READ_WRITE_MODE">READ_WRITE</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="IS_CASCADED">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MEP_IDENTIFIER">1</spirit:configurableElementValue>
@@ -3432,7 +3398,7 @@
         <spirit:instanceName>s00_si_converter</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_si_converter" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s00sic_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_s00sic_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="READ_WRITE_MODE">READ_WRITE</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="LIMIT_READ_LENGTH">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="LIMIT_WRITE_LENGTH">0</spirit:configurableElementValue>
@@ -3442,7 +3408,7 @@
           <spirit:configurableElementValue spirit:referenceId="MEP_IDENTIFIER_WIDTH">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SUPPORTS_NARROW">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="HAS_BURST">0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="NUM_SEG">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="NUM_SEG">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="ADDR_WIDTH">32</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="ID_WIDTH">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="RDATA_WIDTH">32</spirit:configurableElementValue>
@@ -3458,12 +3424,6 @@
           <spirit:configurableElementValue spirit:referenceId="SEP001_RDATA_WIDTH">64</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEP001_WDATA_WIDTH">64</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="SEP001_PROTOCOL">AXI3</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEP002_RDATA_WIDTH">64</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEP002_WDATA_WIDTH">64</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEP002_PROTOCOL">AXI3</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEP003_RDATA_WIDTH">64</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEP003_WDATA_WIDTH">64</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="SEP003_PROTOCOL">AXI3</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MSC000_RDATA_WIDTH">64</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MSC000_WDATA_WIDTH">64</spirit:configurableElementValue>
         </spirit:configurableElementValues>
@@ -3675,7 +3635,7 @@
         <spirit:instanceName>ar_switchboard</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_switchboard" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_arsw_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_arsw_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="S_PIPELINES">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="M_PIPELINES">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="S_LATENCY">0</spirit:configurableElementValue>
@@ -3690,7 +3650,7 @@
         <spirit:instanceName>r_switchboard</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_switchboard" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_rsw_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_rsw_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="S_PIPELINES">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="M_PIPELINES">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="S_LATENCY">0</spirit:configurableElementValue>
@@ -3705,7 +3665,7 @@
         <spirit:instanceName>aw_switchboard</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_switchboard" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_awsw_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_awsw_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="S_PIPELINES">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="M_PIPELINES">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="S_LATENCY">0</spirit:configurableElementValue>
@@ -3720,7 +3680,7 @@
         <spirit:instanceName>w_switchboard</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_switchboard" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_wsw_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_wsw_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="S_PIPELINES">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="M_PIPELINES">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="S_LATENCY">0</spirit:configurableElementValue>
@@ -3735,7 +3695,7 @@
         <spirit:instanceName>b_switchboard</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="sc_switchboard" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_bsw_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_bsw_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="S_PIPELINES">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="M_PIPELINES">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="S_LATENCY">0</spirit:configurableElementValue>
@@ -4118,14 +4078,14 @@
         <spirit:instanceName>one</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_one_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_one_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>psr_aclk</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="proc_sys_reset" spirit:vendor="xilinx.com" spirit:version="5.0"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_psr_aclk_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">bd_7baa_psr_aclk_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_AUX_RESET_HIGH">0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_AUX_RST_WIDTH">1</spirit:configurableElementValue>
         </spirit:configurableElementValues>

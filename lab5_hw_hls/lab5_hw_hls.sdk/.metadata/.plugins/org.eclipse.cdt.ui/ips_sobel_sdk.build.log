@@ -1,0 +1,137 @@
+15:21:16 **** Auto Build of configuration Debug for project ips_sobel_sdk ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xsdps_hw.h:75:0,
+                 from ../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xsdps.h:163,
+                 from ../src/helloworld.c:23:
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_io.h: In function 'main':
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_io.h:117:18: error: invalid storage class for function 'Xil_In8'
+ static INLINE u8 Xil_In8(UINTPTR Addr)
+                  ^~~~~~~
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_io.h:134:19: error: invalid storage class for function 'Xil_In16'
+ static INLINE u16 Xil_In16(UINTPTR Addr)
+                   ^~~~~~~~
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_io.h:151:19: error: invalid storage class for function 'Xil_In32'
+ static INLINE u32 Xil_In32(UINTPTR Addr)
+                   ^~~~~~~~
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_io.h:168:19: error: invalid storage class for function 'Xil_In64'
+ static INLINE u64 Xil_In64(UINTPTR Addr)
+                   ^~~~~~~~
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_io.h:186:20: error: invalid storage class for function 'Xil_Out8'
+ static INLINE void Xil_Out8(UINTPTR Addr, u8 Value)
+                    ^~~~~~~~
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_io.h:204:20: error: invalid storage class for function 'Xil_Out16'
+ static INLINE void Xil_Out16(UINTPTR Addr, u16 Value)
+                    ^~~~~~~~~
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_io.h:223:20: error: invalid storage class for function 'Xil_Out32'
+ static INLINE void Xil_Out32(UINTPTR Addr, u32 Value)
+                    ^~~~~~~~~
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_io.h:245:20: error: invalid storage class for function 'Xil_Out64'
+ static INLINE void Xil_Out64(UINTPTR Addr, u64 Value)
+                    ^~~~~~~~~
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_io.h:289:19: error: invalid storage class for function 'Xil_In16BE'
+ static INLINE u16 Xil_In16BE(UINTPTR Addr)
+                   ^~~~~~~~~~
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_io.h:303:19: error: invalid storage class for function 'Xil_In32BE'
+ static INLINE u32 Xil_In32BE(UINTPTR Addr)
+                   ^~~~~~~~~~
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_io.h:317:20: error: invalid storage class for function 'Xil_Out16BE'
+ static INLINE void Xil_Out16BE(UINTPTR Addr, u16 Value)
+                    ^~~~~~~~~~~
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_io.h:331:20: error: invalid storage class for function 'Xil_Out32BE'
+ static INLINE void Xil_Out32BE(UINTPTR Addr, u32 Value)
+                    ^~~~~~~~~~~
+In file included from ../src/helloworld.c:29:0:
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:69:1: error: invalid storage class for function 'bintime_addx'
+ bintime_addx(struct bintime *_bt, uint64_t _x)
+ ^~~~~~~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:80:1: error: invalid storage class for function 'bintime_add'
+ bintime_add(struct bintime *_bt, const struct bintime *_bt2)
+ ^~~~~~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:92:1: error: invalid storage class for function 'bintime_sub'
+ bintime_sub(struct bintime *_bt, const struct bintime *_bt2)
+ ^~~~~~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:104:1: error: invalid storage class for function 'bintime_mul'
+ bintime_mul(struct bintime *_bt, u_int _x)
+ ^~~~~~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:116:1: error: invalid storage class for function 'bintime_shift'
+ bintime_shift(struct bintime *_bt, int _exp)
+ ^~~~~~~~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:145:1: error: invalid storage class for function 'sbintime_getsec'
+ sbintime_getsec(sbintime_t _sbt)
+ ^~~~~~~~~~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:152:1: error: invalid storage class for function 'bttosbt'
+ bttosbt(const struct bintime _bt)
+ ^~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:159:1: error: invalid storage class for function 'sbttobt'
+ sbttobt(sbintime_t _sbt)
+ ^~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:183:1: error: invalid storage class for function 'bintime2timespec'
+ bintime2timespec(const struct bintime *_bt, struct timespec *_ts)
+ ^~~~~~~~~~~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:192:1: error: invalid storage class for function 'timespec2bintime'
+ timespec2bintime(const struct timespec *_ts, struct bintime *_bt)
+ ^~~~~~~~~~~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:201:1: error: invalid storage class for function 'bintime2timeval'
+ bintime2timeval(const struct bintime *_bt, struct timeval *_tv)
+ ^~~~~~~~~~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:209:1: error: invalid storage class for function 'timeval2bintime'
+ timeval2bintime(const struct timeval *_tv, struct bintime *_bt)
+ ^~~~~~~~~~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:218:1: error: invalid storage class for function 'sbttots'
+ sbttots(sbintime_t _sbt)
+ ^~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:228:1: error: invalid storage class for function 'tstosbt'
+ tstosbt(struct timespec _ts)
+ ^~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:236:1: error: invalid storage class for function 'sbttotv'
+ sbttotv(sbintime_t _sbt)
+ ^~~~~~~
+/opt/Xilinx/SDK/2017.1/gnu/aarch32/lin/gcc-arm-none-eabi/arm-none-eabi/libc/usr/include/sys/time.h:246:1: error: invalid storage class for function 'tvtosbt'
+ tvtosbt(struct timeval _tv)
+ ^~~~~~~
+../src/helloworld.c:66:8: error: static declaration of 'sobel' follows non-static declaration
+ double sobel(unsigned char *input, unsigned char *output, unsigned char *golden)
+        ^~~~~
+../src/helloworld.c:50:8: note: previous declaration of 'sobel' was here
+ double sobel(unsigned char *input, unsigned char *output, unsigned char *golden);
+        ^~~~~
+../src/helloworld.c: In function 'sobel':
+../src/helloworld.c:154:36: error: 'horiz_operator' undeclared (first use in this function)
+    p = (convolution2D(i, j, input, horiz_operator))*(convolution2D(i, j, input, horiz_operator)) +
+                                    ^~~~~~~~~~~~~~
+../src/helloworld.c:154:36: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:155:33: error: 'vert_operator' undeclared (first use in this function)
+     (convolution2D(i, j, input, vert_operator))*(convolution2D(i, j, input, vert_operator));
+                                 ^~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:229:5: warning: 'main' is normally a non-static function [-Wmain]
+ int main(int argc, char* argv[])
+     ^~~~
+In file included from ../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xtmrctr.h:177:0,
+                 from ../src/helloworld.c:27:
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xtmrctr_l.h:167:11: warning: unused variable 'XTmrCtr_Offsets' [-Wunused-variable]
+ extern u8 XTmrCtr_Offsets[];
+           ^~~~~~~~~~~~~~~
+In file included from ../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xstatus.h:55:0,
+                 from ../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xsdps.h:162,
+                 from ../src/helloworld.c:23:
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_assert.h:77:12: warning: unused variable 'Xil_AssertWait' [-Wunused-variable]
+ extern s32 Xil_AssertWait;
+            ^~~~~~~~~~~~~~
+../../ips_sobel_sdk_bsp/ps7_cortexa9_0/include/xil_assert.h:76:12: warning: unused variable 'Xil_AssertStatus' [-Wunused-variable]
+src/subdir.mk:24: recipe for target 'src/helloworld.o' failed
+ extern u32 Xil_AssertStatus;
+            ^~~~~~~~~~~~~~~~
+At top level:
+../src/helloworld.c:229:5: warning: 'main' defined but not used [-Wunused-function]
+ int main(int argc, char* argv[])
+     ^~~~
+make: *** [src/helloworld.o] Error 1
+
+15:21:16 Build Finished (took 181ms)
+

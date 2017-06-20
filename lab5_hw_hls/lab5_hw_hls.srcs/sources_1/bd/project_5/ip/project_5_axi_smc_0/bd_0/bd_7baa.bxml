@@ -1,477 +1,289 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Root MajorVersion="0"
-		MinorVersion="33">
-	<CompositeFile CompositeFileTopName="bd_7baa"
-			CanBeSetAsTop="true"
-			CanDisplayChildGraph="true">
-		<Description>Composite Fileset</Description>
-		<Generation Name="SYNTHESIS"
-				State="GENERATED"
-				Timestamp="1497897079"/>
-		<Generation Name="IMPLEMENTATION"
-				State="GENERATED"
-				Timestamp="1497897079"/>
-		<Generation Name="SIMULATION"
-				State="GENERATED"
-				Timestamp="1497897079"/>
-		<FileCollection Name="SOURCES"
-				Type="SOURCES">
-			<File Name="ip/ip_42/bd_7baa_s00a2s_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="s00_axi2sc"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_51/bd_7baa_s01a2s_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="s01_axi2sc"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_57/bd_7baa_m00s2a_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="m00_sc2axi"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_63/bd_7baa_m00e_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="m00_exit_pipeline/m00_exit"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_58/bd_7baa_m00arn_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="m00_nodes/m00_ar_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_59/bd_7baa_m00rn_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="m00_nodes/m00_r_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_60/bd_7baa_m00awn_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="m00_nodes/m00_aw_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_61/bd_7baa_m00wn_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="m00_nodes/m00_w_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_62/bd_7baa_m00bn_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="m00_nodes/m00_b_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_52/bd_7baa_sarn_3.xci"
-					Type="IP">
-				<Instance HierarchyPath="s01_nodes/s01_ar_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_53/bd_7baa_srn_3.xci"
-					Type="IP">
-				<Instance HierarchyPath="s01_nodes/s01_r_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_54/bd_7baa_sawn_3.xci"
-					Type="IP">
-				<Instance HierarchyPath="s01_nodes/s01_aw_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_55/bd_7baa_swn_3.xci"
-					Type="IP">
-				<Instance HierarchyPath="s01_nodes/s01_w_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_56/bd_7baa_sbn_3.xci"
-					Type="IP">
-				<Instance HierarchyPath="s01_nodes/s01_b_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_48/bd_7baa_s01mmu_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="s01_entry_pipeline/s01_mmu"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_49/bd_7baa_s01tr_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="s01_entry_pipeline/s01_transaction_regulator"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_50/bd_7baa_s01sic_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="s01_entry_pipeline/s01_si_converter"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_43/bd_7baa_sarn_2.xci"
-					Type="IP">
-				<Instance HierarchyPath="s00_nodes/s00_ar_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_44/bd_7baa_srn_2.xci"
-					Type="IP">
-				<Instance HierarchyPath="s00_nodes/s00_r_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_45/bd_7baa_sawn_2.xci"
-					Type="IP">
-				<Instance HierarchyPath="s00_nodes/s00_aw_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_46/bd_7baa_swn_2.xci"
-					Type="IP">
-				<Instance HierarchyPath="s00_nodes/s00_w_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_47/bd_7baa_sbn_2.xci"
-					Type="IP">
-				<Instance HierarchyPath="s00_nodes/s00_b_node"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_39/bd_7baa_s00mmu_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="s00_entry_pipeline/s00_mmu"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_40/bd_7baa_s00tr_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="s00_entry_pipeline/s00_transaction_regulator"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_41/bd_7baa_s00sic_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="s00_entry_pipeline/s00_si_converter"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_34/bd_7baa_arsw_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="switchboards/ar_switchboard"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_35/bd_7baa_rsw_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="switchboards/r_switchboard"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_36/bd_7baa_awsw_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="switchboards/aw_switchboard"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_37/bd_7baa_wsw_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="switchboards/w_switchboard"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_38/bd_7baa_bsw_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="switchboards/b_switchboard"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_32/bd_7baa_one_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="clk_map/one"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="ip/ip_33/bd_7baa_psr_aclk_1.xci"
-					Type="IP">
-				<Instance HierarchyPath="clk_map/psr_aclk"/>
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="true"
-						IsStatusTracked="true"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="hdl/bd_7baa.v"
-					Type="Verilog">
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="false"
-						IsStatusTracked="false"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="SYNTHESIS"/>
-				<UsedIn Val="IMPLEMENTATION"/>
-				<UsedIn Val="SIMULATION"/>
-			</File>
-			<File Name="hw_handoff/project_5_axi_smc_0.hwh"
-					Type="HwHandoff">
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="false"
-						IsStatusTracked="false"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="HW_HANDOFF"/>
-			</File>
-			<File Name="hw_handoff/project_5_axi_smc_0_bd.tcl">
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="false"
-						IsStatusTracked="false"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="HW_HANDOFF"/>
-			</File>
-			<File Name="hdl/project_5_axi_smc_0.hwdef">
-				<Properties IsEditable="false"
-						IsVisible="true"
-						Timestamp="0"
-						IsTrackable="false"
-						IsStatusTracked="false"/>
-				<Library Name="xil_defaultlib"/>
-				<UsedIn Val="HW_HANDOFF"/>
-			</File>
-		</FileCollection>
-	</CompositeFile>
+<Root MajorVersion="0" MinorVersion="33">
+  <CompositeFile CompositeFileTopName="bd_7baa" CanBeSetAsTop="true" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1497957801"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1497957801"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1497957801"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="hdl/bd_7baa.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_10/bd_7baa_s00a2s_0.xci" Type="IP">
+        <Instance HierarchyPath="s00_axi2sc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_19/bd_7baa_s01a2s_0.xci" Type="IP">
+        <Instance HierarchyPath="s01_axi2sc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_25/bd_7baa_m00s2a_0.xci" Type="IP">
+        <Instance HierarchyPath="m00_sc2axi"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_31/bd_7baa_m00e_0.xci" Type="IP">
+        <Instance HierarchyPath="m00_exit_pipeline/m00_exit"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_26/bd_7baa_m00arn_0.xci" Type="IP">
+        <Instance HierarchyPath="m00_nodes/m00_ar_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_27/bd_7baa_m00rn_0.xci" Type="IP">
+        <Instance HierarchyPath="m00_nodes/m00_r_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_28/bd_7baa_m00awn_0.xci" Type="IP">
+        <Instance HierarchyPath="m00_nodes/m00_aw_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_29/bd_7baa_m00wn_0.xci" Type="IP">
+        <Instance HierarchyPath="m00_nodes/m00_w_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_30/bd_7baa_m00bn_0.xci" Type="IP">
+        <Instance HierarchyPath="m00_nodes/m00_b_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_20/bd_7baa_sarn_1.xci" Type="IP">
+        <Instance HierarchyPath="s01_nodes/s01_ar_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_21/bd_7baa_srn_1.xci" Type="IP">
+        <Instance HierarchyPath="s01_nodes/s01_r_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_22/bd_7baa_sawn_1.xci" Type="IP">
+        <Instance HierarchyPath="s01_nodes/s01_aw_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_23/bd_7baa_swn_1.xci" Type="IP">
+        <Instance HierarchyPath="s01_nodes/s01_w_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_24/bd_7baa_sbn_1.xci" Type="IP">
+        <Instance HierarchyPath="s01_nodes/s01_b_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_16/bd_7baa_s01mmu_0.xci" Type="IP">
+        <Instance HierarchyPath="s01_entry_pipeline/s01_mmu"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_17/bd_7baa_s01tr_0.xci" Type="IP">
+        <Instance HierarchyPath="s01_entry_pipeline/s01_transaction_regulator"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_18/bd_7baa_s01sic_0.xci" Type="IP">
+        <Instance HierarchyPath="s01_entry_pipeline/s01_si_converter"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_11/bd_7baa_sarn_0.xci" Type="IP">
+        <Instance HierarchyPath="s00_nodes/s00_ar_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_12/bd_7baa_srn_0.xci" Type="IP">
+        <Instance HierarchyPath="s00_nodes/s00_r_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_13/bd_7baa_sawn_0.xci" Type="IP">
+        <Instance HierarchyPath="s00_nodes/s00_aw_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_14/bd_7baa_swn_0.xci" Type="IP">
+        <Instance HierarchyPath="s00_nodes/s00_w_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_15/bd_7baa_sbn_0.xci" Type="IP">
+        <Instance HierarchyPath="s00_nodes/s00_b_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_7/bd_7baa_s00mmu_0.xci" Type="IP">
+        <Instance HierarchyPath="s00_entry_pipeline/s00_mmu"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_8/bd_7baa_s00tr_0.xci" Type="IP">
+        <Instance HierarchyPath="s00_entry_pipeline/s00_transaction_regulator"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_9/bd_7baa_s00sic_0.xci" Type="IP">
+        <Instance HierarchyPath="s00_entry_pipeline/s00_si_converter"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_2/bd_7baa_arsw_0.xci" Type="IP">
+        <Instance HierarchyPath="switchboards/ar_switchboard"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_3/bd_7baa_rsw_0.xci" Type="IP">
+        <Instance HierarchyPath="switchboards/r_switchboard"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_4/bd_7baa_awsw_0.xci" Type="IP">
+        <Instance HierarchyPath="switchboards/aw_switchboard"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_5/bd_7baa_wsw_0.xci" Type="IP">
+        <Instance HierarchyPath="switchboards/w_switchboard"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_6/bd_7baa_bsw_0.xci" Type="IP">
+        <Instance HierarchyPath="switchboards/b_switchboard"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_0/bd_7baa_one_0.xci" Type="IP">
+        <Instance HierarchyPath="clk_map/one"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_1/bd_7baa_psr_aclk_0.xci" Type="IP">
+        <Instance HierarchyPath="clk_map/psr_aclk"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="hw_handoff/project_5_axi_smc_0.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hw_handoff/project_5_axi_smc_0_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hdl/project_5_axi_smc_0.hwdef">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
 </Root>
