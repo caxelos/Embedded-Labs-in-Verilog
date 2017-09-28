@@ -1,0 +1,14 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../test_sobel.cpp in debug mode
+csim.mk:73: recipe for target 'obj/test_sobel.o' failed
+In file included from ../../../../../test_sobel.cpp:1:0:
+../../../../../sobel.h:14:0: warning: "MAX_WIDTH" redefined [enabled by default]
+../../../../../sobel.h:9:0: note: this is the location of the previous definition
+../../../../../sobel.h:15:0: warning: "MAX_HEIGHT" redefined [enabled by default]
+../../../../../sobel.h:10:0: note: this is the location of the previous definition
+../../../../../test_sobel.cpp: In function ‘int main()’:
+../../../../../test_sobel.cpp:9:21: error: no match for ‘operator[]’ in ‘INPUT_STREAM[i][j]’
+make: *** [obj/test_sobel.o] Error 1
+CRITICAL WARNING: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

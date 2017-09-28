@@ -1,0 +1,281 @@
+
+
+================================================================
+== Vivado HLS Report for 'convolution_sobel'
+================================================================
+* Date:           Thu Sep 28 18:05:23 2017
+
+* Version:        2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)
+* Project:        cppSobel
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      7.72|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-------+-----+-------+----------+
+    |   Latency   |   Interval  | Pipeline |
+    | min |  max  | min |  max  |   Type   |
+    +-----+-------+-----+-------+----------+
+    |   50|  51251|   50|  51251| dataflow |
+    +-----+-------+-----+-------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 8
+* Pipeline: 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 8, States = { 1 2 3 4 5 6 7 8 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+* FSM state operations: 
+
+ <State 1>: 0.00ns
+ST_1: img_0_data_stream_0 (41)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:35
+Mat.exit14:20  %img_0_data_stream_0 = alloca i8, align 1
+
+ST_1: img_1_data_stream_0 (44)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:36
+Mat.exit14:23  %img_1_data_stream_0 = alloca i8, align 1
+
+
+ <State 2>: 0.00ns
+ST_2: cols_read (39)  [1/1] 0.00ns
+Mat.exit14:18  %cols_read = call i32 @_ssdm_op_Read.ap_stable.i32(i32 %cols)
+
+ST_2: rows_read (40)  [1/1] 0.00ns
+Mat.exit14:19  %rows_read = call i32 @_ssdm_op_Read.ap_stable.i32(i32 %rows)
+
+ST_2: StgValue_13 (54)  [2/2] 0.00ns
+Mat.exit14:33  call void @AXIvideo2Mat(i32* %INPUT_STREAM_V_data_V, i4* %INPUT_STREAM_V_keep_V, i4* %INPUT_STREAM_V_strb_V, i1* %INPUT_STREAM_V_user_V, i1* %INPUT_STREAM_V_last_V, i1* %INPUT_STREAM_V_id_V, i1* %INPUT_STREAM_V_dest_V, i32 %rows_read, i32 %cols_read, i8* %img_0_data_stream_0)
+
+
+ <State 3>: 0.00ns
+ST_3: StgValue_14 (54)  [1/2] 0.00ns
+Mat.exit14:33  call void @AXIvideo2Mat(i32* %INPUT_STREAM_V_data_V, i4* %INPUT_STREAM_V_keep_V, i4* %INPUT_STREAM_V_strb_V, i1* %INPUT_STREAM_V_user_V, i1* %INPUT_STREAM_V_last_V, i1* %INPUT_STREAM_V_id_V, i1* %INPUT_STREAM_V_dest_V, i32 %rows_read, i32 %cols_read, i8* %img_0_data_stream_0)
+
+
+ <State 4>: 2.71ns
+ST_4: StgValue_15 (55)  [2/2] 2.71ns
+Mat.exit14:34  call void @Loop_1_proc(i32 %rows_read, i32 %cols_read, i8* %img_1_data_stream_0, i8* %img_0_data_stream_0)
+
+
+ <State 5>: 0.00ns
+ST_5: StgValue_16 (55)  [1/2] 0.00ns
+Mat.exit14:34  call void @Loop_1_proc(i32 %rows_read, i32 %cols_read, i8* %img_1_data_stream_0, i8* %img_0_data_stream_0)
+
+
+ <State 6>: 2.71ns
+ST_6: StgValue_17 (56)  [2/2] 2.71ns
+Mat.exit14:35  call void @Mat2AXIvideo(i32 %rows_read, i32 %cols_read, i8* %img_1_data_stream_0, i32* %OUTPUT_STREAM_V_data_V, i4* %OUTPUT_STREAM_V_keep_V, i4* %OUTPUT_STREAM_V_strb_V, i1* %OUTPUT_STREAM_V_user_V, i1* %OUTPUT_STREAM_V_last_V, i1* %OUTPUT_STREAM_V_id_V, i1* %OUTPUT_STREAM_V_dest_V)
+
+
+ <State 7>: 0.00ns
+ST_7: StgValue_18 (56)  [1/2] 0.00ns
+Mat.exit14:35  call void @Mat2AXIvideo(i32 %rows_read, i32 %cols_read, i8* %img_1_data_stream_0, i32* %OUTPUT_STREAM_V_data_V, i4* %OUTPUT_STREAM_V_keep_V, i4* %OUTPUT_STREAM_V_strb_V, i1* %OUTPUT_STREAM_V_user_V, i1* %OUTPUT_STREAM_V_last_V, i1* %OUTPUT_STREAM_V_id_V, i1* %OUTPUT_STREAM_V_dest_V)
+
+
+ <State 8>: 0.00ns
+ST_8: StgValue_19 (21)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:33
+Mat.exit14:0  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str10437) nounwind
+
+ST_8: StgValue_20 (22)  [1/1] 0.00ns
+Mat.exit14:1  call void (...)* @_ssdm_op_SpecBitsMap(i32* %INPUT_STREAM_V_data_V), !map !178
+
+ST_8: StgValue_21 (23)  [1/1] 0.00ns
+Mat.exit14:2  call void (...)* @_ssdm_op_SpecBitsMap(i4* %INPUT_STREAM_V_keep_V), !map !182
+
+ST_8: StgValue_22 (24)  [1/1] 0.00ns
+Mat.exit14:3  call void (...)* @_ssdm_op_SpecBitsMap(i4* %INPUT_STREAM_V_strb_V), !map !186
+
+ST_8: StgValue_23 (25)  [1/1] 0.00ns
+Mat.exit14:4  call void (...)* @_ssdm_op_SpecBitsMap(i1* %INPUT_STREAM_V_user_V), !map !190
+
+ST_8: StgValue_24 (26)  [1/1] 0.00ns
+Mat.exit14:5  call void (...)* @_ssdm_op_SpecBitsMap(i1* %INPUT_STREAM_V_last_V), !map !194
+
+ST_8: StgValue_25 (27)  [1/1] 0.00ns
+Mat.exit14:6  call void (...)* @_ssdm_op_SpecBitsMap(i1* %INPUT_STREAM_V_id_V), !map !198
+
+ST_8: StgValue_26 (28)  [1/1] 0.00ns
+Mat.exit14:7  call void (...)* @_ssdm_op_SpecBitsMap(i1* %INPUT_STREAM_V_dest_V), !map !202
+
+ST_8: StgValue_27 (29)  [1/1] 0.00ns
+Mat.exit14:8  call void (...)* @_ssdm_op_SpecBitsMap(i32* %OUTPUT_STREAM_V_data_V), !map !206
+
+ST_8: StgValue_28 (30)  [1/1] 0.00ns
+Mat.exit14:9  call void (...)* @_ssdm_op_SpecBitsMap(i4* %OUTPUT_STREAM_V_keep_V), !map !210
+
+ST_8: StgValue_29 (31)  [1/1] 0.00ns
+Mat.exit14:10  call void (...)* @_ssdm_op_SpecBitsMap(i4* %OUTPUT_STREAM_V_strb_V), !map !214
+
+ST_8: StgValue_30 (32)  [1/1] 0.00ns
+Mat.exit14:11  call void (...)* @_ssdm_op_SpecBitsMap(i1* %OUTPUT_STREAM_V_user_V), !map !218
+
+ST_8: StgValue_31 (33)  [1/1] 0.00ns
+Mat.exit14:12  call void (...)* @_ssdm_op_SpecBitsMap(i1* %OUTPUT_STREAM_V_last_V), !map !222
+
+ST_8: StgValue_32 (34)  [1/1] 0.00ns
+Mat.exit14:13  call void (...)* @_ssdm_op_SpecBitsMap(i1* %OUTPUT_STREAM_V_id_V), !map !226
+
+ST_8: StgValue_33 (35)  [1/1] 0.00ns
+Mat.exit14:14  call void (...)* @_ssdm_op_SpecBitsMap(i1* %OUTPUT_STREAM_V_dest_V), !map !230
+
+ST_8: StgValue_34 (36)  [1/1] 0.00ns
+Mat.exit14:15  call void (...)* @_ssdm_op_SpecBitsMap(i32 %rows), !map !234
+
+ST_8: StgValue_35 (37)  [1/1] 0.00ns
+Mat.exit14:16  call void (...)* @_ssdm_op_SpecBitsMap(i32 %cols), !map !240
+
+ST_8: StgValue_36 (38)  [1/1] 0.00ns
+Mat.exit14:17  call void (...)* @_ssdm_op_SpecTopModule([18 x i8]* @convolution_sobel_st) nounwind
+
+ST_8: empty (42)  [1/1] 0.00ns
+Mat.exit14:21  %empty = call i32 (...)* @_ssdm_op_SpecChannel([23 x i8]* @img_0_OC_data_stream, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 1, i8* %img_0_data_stream_0, i8* %img_0_data_stream_0)
+
+ST_8: StgValue_38 (43)  [1/1] 0.00ns
+Mat.exit14:22  call void (...)* @_ssdm_op_SpecInterface(i8* %img_0_data_stream_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_8: empty_4 (45)  [1/1] 0.00ns
+Mat.exit14:24  %empty_4 = call i32 (...)* @_ssdm_op_SpecChannel([23 x i8]* @img_1_OC_data_stream, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 1, i8* %img_1_data_stream_0, i8* %img_1_data_stream_0)
+
+ST_8: StgValue_40 (46)  [1/1] 0.00ns
+Mat.exit14:25  call void (...)* @_ssdm_op_SpecInterface(i8* %img_1_data_stream_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_8: StgValue_41 (47)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:20
+Mat.exit14:26  call void (...)* @_ssdm_op_SpecInterface(i32* %INPUT_STREAM_V_data_V, i4* %INPUT_STREAM_V_keep_V, i4* %INPUT_STREAM_V_strb_V, i1* %INPUT_STREAM_V_user_V, i1* %INPUT_STREAM_V_last_V, i1* %INPUT_STREAM_V_id_V, i1* %INPUT_STREAM_V_dest_V, [5 x i8]* @p_str10435, i32 1, i32 1, [5 x i8]* @p_str10436, i32 0, i32 0, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437) nounwind
+
+ST_8: StgValue_42 (48)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:21
+Mat.exit14:27  call void (...)* @_ssdm_op_SpecInterface(i32* %OUTPUT_STREAM_V_data_V, i4* %OUTPUT_STREAM_V_keep_V, i4* %OUTPUT_STREAM_V_strb_V, i1* %OUTPUT_STREAM_V_user_V, i1* %OUTPUT_STREAM_V_last_V, i1* %OUTPUT_STREAM_V_id_V, i1* %OUTPUT_STREAM_V_dest_V, [5 x i8]* @p_str10435, i32 1, i32 1, [5 x i8]* @p_str10436, i32 0, i32 0, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437) nounwind
+
+ST_8: StgValue_43 (49)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:24
+Mat.exit14:28  call void (...)* @_ssdm_op_SpecIFCore(i32 %rows, [1 x i8]* @p_str10437, [10 x i8]* @p_str10438, [1 x i8]* @p_str10437, i32 -1, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [24 x i8]* @p_str10439)
+
+ST_8: StgValue_44 (50)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:25
+Mat.exit14:29  call void (...)* @_ssdm_op_SpecIFCore(i32 %cols, [1 x i8]* @p_str10437, [10 x i8]* @p_str10438, [1 x i8]* @p_str10437, i32 -1, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [24 x i8]* @p_str10439)
+
+ST_8: StgValue_45 (51)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:26
+Mat.exit14:30  call void (...)* @_ssdm_op_SpecIFCore(i32 0, [1 x i8]* @p_str10437, [10 x i8]* @p_str10438, [1 x i8]* @p_str10437, i32 -1, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [24 x i8]* @p_str10439)
+
+ST_8: StgValue_46 (52)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:29
+Mat.exit14:31  call void (...)* @_ssdm_op_SpecInterface(i32 %rows, [10 x i8]* @p_str10440, i32 0, i32 0, [1 x i8]* @p_str10437, i32 0, i32 0, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437) nounwind
+
+ST_8: StgValue_47 (53)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:30
+Mat.exit14:32  call void (...)* @_ssdm_op_SpecInterface(i32 %cols, [10 x i8]* @p_str10440, i32 0, i32 0, [1 x i8]* @p_str10437, i32 0, i32 0, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437) nounwind
+
+ST_8: StgValue_48 (57)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:127
+Mat.exit14:36  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 2.71ns
+The critical path consists of the following:
+	'call' operation to 'Loop_1_proc' [55]  (2.71 ns)
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 2.71ns
+The critical path consists of the following:
+	'call' operation to 'Mat2AXIvideo' [56]  (2.71 ns)
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

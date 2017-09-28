@@ -1,0 +1,737 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_1_proc'
+================================================================
+* Date:           Thu Sep 28 18:05:22 2017
+
+* Version:        2017.1 (Build 1846317 on Fri Apr 14 19:19:38 MDT 2017)
+* Project:        cppSobel
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      7.72|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-------+-----+-------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    | min |  max  | min |  max  |   Type  |
+    +-----+-------+-----+-------+---------+
+    |   49|  51250|   49|  51250|   none  |
+    +-----+-------+-----+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+-----+-------+-----------+-----------+-----------+--------+----------+
+        |                     |   Latency   | Iteration |  Initiation Interval  |  Trip  |          |
+        |      Loop Name      | min |  max  |  Latency  |  achieved |   target  |  Count | Pipelined|
+        +---------------------+-----+-------+-----------+-----------+-----------+--------+----------+
+        |- Loop 1             |   48|  51249| 24 ~ 1553 |          -|          -| 2 ~ 33 |    no    |
+        | + Loop 1.1          |   22|   1551|  11 ~ 47  |          -|          -| 2 ~ 33 |    no    |
+        |  ++ Loop 1.1.1      |    6|      6|          2|          -|          -|       3|    no    |
+        |  ++ Loop 1.1.2      |   33|     33|         11|          -|          -|       3|    no    |
+        |   +++ Loop 1.1.2.1  |    9|      9|          3|          -|          -|       3|    no    |
+        +---------------------+-----+-------+-----------+-----------+-----------+--------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 14
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond4_i)
+3 --> 
+	4  / (!exitcond3_i)
+	2  / (exitcond3_i)
+4 --> 
+	5  / (!exitcond2_i)
+	6  / (exitcond2_i & or_cond_i)
+	7  / (exitcond2_i & !or_cond_i)
+5 --> 
+	4  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	14  / (tmp_5) | (or_cond8_i)
+	9  / (!tmp_5 & !or_cond8_i)
+9 --> 
+	13  / (exitcond1_i)
+	10  / (!exitcond1_i)
+10 --> 
+	11  / (!exitcond_i)
+	9  / (exitcond_i)
+11 --> 
+	12  / true
+12 --> 
+	10  / true
+13 --> 
+	14  / true
+14 --> 
+	3  / true
+* FSM state operations: 
+
+ <State 1>: 2.71ns
+ST_1: cols_read (9)  [1/1] 0.00ns
+entry:0  %cols_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %cols)
+
+ST_1: rows_read (10)  [1/1] 0.00ns
+entry:1  %rows_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %rows)
+
+ST_1: tmp (11)  [1/1] 0.00ns
+entry:2  %tmp = trunc i32 %rows_read to i6
+
+ST_1: tmp_3 (12)  [1/1] 0.00ns
+entry:3  %tmp_3 = trunc i32 %cols_read to i6
+
+ST_1: StgValue_19 (13)  [1/1] 0.00ns
+entry:4  call void (...)* @_ssdm_op_SpecIFCore(i6 %tmp_3, [1 x i8]* @p_str10437, [10 x i8]* @p_str10438, [1 x i8]* @p_str10437, i32 -1, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [24 x i8]* @p_str10439)
+
+ST_1: StgValue_20 (14)  [1/1] 0.00ns
+entry:5  call void (...)* @_ssdm_op_SpecIFCore(i6 %tmp, [1 x i8]* @p_str10437, [10 x i8]* @p_str10438, [1 x i8]* @p_str10437, i32 -1, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [1 x i8]* @p_str10437, [24 x i8]* @p_str10439)
+
+ST_1: StgValue_21 (15)  [1/1] 0.00ns
+entry:6  call void (...)* @_ssdm_op_SpecInterface(i8* %img_1_data_stream_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: StgValue_22 (16)  [1/1] 0.00ns
+entry:7  call void (...)* @_ssdm_op_SpecInterface(i8* %img_0_data_stream_0, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_1: tmp_1_i (17)  [1/1] 2.71ns  loc: cppSobel/.settings/sobel.cpp:98
+entry:8  %tmp_1_i = add i6 %tmp, -1
+
+ST_1: tmp_2_i (18)  [1/1] 2.71ns  loc: cppSobel/.settings/sobel.cpp:98
+entry:9  %tmp_2_i = add i6 %tmp_3, -1
+
+ST_1: tmp_12_i (19)  [1/1] 2.71ns  loc: cppSobel/.settings/sobel.cpp:65
+entry:10  %tmp_12_i = add i6 %tmp_3, 1
+
+ST_1: tmp_31_i (20)  [1/1] 2.71ns  loc: cppSobel/.settings/sobel.cpp:65
+entry:11  %tmp_31_i = add i6 %tmp, 1
+
+ST_1: StgValue_27 (21)  [1/1] 1.77ns  loc: cppSobel/.settings/sobel.cpp:65
+entry:12  br label %.preheader7.i
+
+
+ <State 2>: 6.59ns
+ST_2: row_i (23)  [1/1] 0.00ns
+.preheader7.i:0  %row_i = phi i6 [ 0, %entry ], [ %row, %.preheader7.i.loopexit ]
+
+ST_2: StgValue_29 (24)  [1/1] 0.00ns
+.preheader7.i:1  call void (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 33, i64 0)
+
+ST_2: exitcond4_i (25)  [1/1] 3.88ns  loc: cppSobel/.settings/sobel.cpp:65
+.preheader7.i:2  %exitcond4_i = icmp eq i6 %row_i, %tmp_31_i
+
+ST_2: row (26)  [1/1] 2.71ns  loc: cppSobel/.settings/sobel.cpp:65
+.preheader7.i:3  %row = add i6 %row_i, 1
+
+ST_2: StgValue_32 (27)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:65
+.preheader7.i:4  br i1 %exitcond4_i, label %Loop_1_proc.exit, label %.preheader6.preheader.i
+
+ST_2: output_row (29)  [1/1] 2.71ns  loc: cppSobel/.settings/sobel.cpp:71
+.preheader6.preheader.i:0  %output_row = add i6 %row_i, -1
+
+ST_2: tmp_4_i (30)  [1/1] 3.88ns  loc: cppSobel/.settings/sobel.cpp:82
+.preheader6.preheader.i:1  %tmp_4_i = icmp ult i6 %row_i, %tmp
+
+ST_2: tmp_5_i (31)  [1/1] 3.88ns  loc: cppSobel/.settings/sobel.cpp:98
+.preheader6.preheader.i:2  %tmp_5_i = icmp eq i6 %output_row, 0
+
+ST_2: tmp_6_i (32)  [1/1] 3.88ns  loc: cppSobel/.settings/sobel.cpp:98
+.preheader6.preheader.i:3  %tmp_6_i = icmp eq i6 %output_row, %tmp_1_i
+
+ST_2: StgValue_37 (33)  [1/1] 1.77ns  loc: cppSobel/.settings/sobel.cpp:66
+.preheader6.preheader.i:4  br label %.preheader6.i
+
+ST_2: StgValue_38 (182)  [1/1] 0.00ns
+Loop_1_proc.exit:0  ret void
+
+
+ <State 3>: 3.88ns
+ST_3: col_i (35)  [1/1] 0.00ns
+.preheader6.i:0  %col_i = phi i6 [ %col, %._crit_edge.i ], [ 0, %.preheader6.preheader.i ]
+
+ST_3: StgValue_40 (36)  [1/1] 0.00ns
+.preheader6.i:1  call void (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 33, i64 0)
+
+ST_3: exitcond3_i (37)  [1/1] 3.88ns  loc: cppSobel/.settings/sobel.cpp:66
+.preheader6.i:2  %exitcond3_i = icmp eq i6 %col_i, %tmp_12_i
+
+ST_3: col (38)  [1/1] 2.71ns  loc: cppSobel/.settings/sobel.cpp:66
+.preheader6.i:3  %col = add i6 %col_i, 1
+
+ST_3: StgValue_43 (39)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:66
+.preheader6.i:4  br i1 %exitcond3_i, label %.preheader7.i.loopexit, label %4
+
+ST_3: output_col (41)  [1/1] 2.71ns  loc: cppSobel/.settings/sobel.cpp:72
+:0  %output_col = add i6 %col_i, -1
+
+ST_3: StgValue_45 (42)  [1/1] 1.77ns  loc: cppSobel/.settings/sobel.cpp:75
+:1  br label %3
+
+ST_3: StgValue_46 (180)  [1/1] 0.00ns
+.preheader7.i.loopexit:0  br label %.preheader7.i
+
+
+ <State 4>: 7.72ns
+ST_4: k_i (44)  [1/1] 0.00ns
+:0  %k_i = phi i2 [ 0, %4 ], [ %k, %5 ]
+
+ST_4: exitcond2_i (45)  [1/1] 2.07ns  loc: cppSobel/.settings/sobel.cpp:75
+:1  %exitcond2_i = icmp eq i2 %k_i, -1
+
+ST_4: StgValue_49 (46)  [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
+
+ST_4: k (47)  [1/1] 2.45ns  loc: cppSobel/.settings/sobel.cpp:75
+:3  %k = add i2 %k_i, 1
+
+ST_4: StgValue_51 (48)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:75
+:4  br i1 %exitcond2_i, label %2, label %5
+
+ST_4: tmp_cast_i (50)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:75
+:0  %tmp_cast_i = zext i2 %k_i to i5
+
+ST_4: tmp_36_i (51)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:75
+:1  %tmp_36_i = call i4 @_ssdm_op_BitConcatenate.i4.i2.i2(i2 %k_i, i2 0)
+
+ST_4: p_shl_cast_i (52)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:76
+:2  %p_shl_cast_i = zext i4 %tmp_36_i to i5
+
+ST_4: tmp_37_i (53)  [1/1] 2.62ns  loc: cppSobel/.settings/sobel.cpp:76
+:3  %tmp_37_i = sub i5 %p_shl_cast_i, %tmp_cast_i
+
+ST_4: tmp_38_i (55)  [1/1] 2.66ns  loc: cppSobel/.settings/sobel.cpp:76
+:5  %tmp_38_i = add i5 %tmp_37_i, 1
+
+ST_4: tmp_38_cast_i (56)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:76
+:6  %tmp_38_cast_i = sext i5 %tmp_38_i to i64
+
+ST_4: window_buffer_addr (57)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:76
+:7  %window_buffer_addr = getelementptr [9 x i8]* @window_buffer, i64 0, i64 %tmp_38_cast_i
+
+ST_4: tmp_39_i (59)  [1/1] 2.66ns  loc: cppSobel/.settings/sobel.cpp:77
+:9  %tmp_39_i = add i5 %tmp_37_i, 2
+
+ST_4: tmp_39_cast_i (60)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:77
+:10  %tmp_39_cast_i = sext i5 %tmp_39_i to i64
+
+ST_4: window_buffer_addr_2 (61)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:77
+:11  %window_buffer_addr_2 = getelementptr [9 x i8]* @window_buffer, i64 0, i64 %tmp_39_cast_i
+
+ST_4: window_buffer_load (62)  [2/2] 2.32ns  loc: cppSobel/.settings/sobel.cpp:76
+:12  %window_buffer_load = load i8* %window_buffer_addr, align 1
+
+ST_4: window_buffer_load_1 (64)  [2/2] 2.32ns  loc: cppSobel/.settings/sobel.cpp:77
+:14  %window_buffer_load_1 = load i8* %window_buffer_addr_2, align 1
+
+ST_4: tmp_8_i (68)  [1/1] 3.88ns  loc: cppSobel/.settings/sobel.cpp:82
+:0  %tmp_8_i = icmp ult i6 %col_i, %tmp_3
+
+ST_4: or_cond_i (69)  [1/1] 2.07ns  loc: cppSobel/.settings/sobel.cpp:82
+:1  %or_cond_i = and i1 %tmp_8_i, %tmp_4_i
+
+ST_4: StgValue_66 (70)  [1/1] 1.77ns  loc: cppSobel/.settings/sobel.cpp:82
+:2  br i1 %or_cond_i, label %1, label %0
+
+ST_4: tmp_3_cast_i (73)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:83
+:1  %tmp_3_cast_i = zext i6 %col_i to i7
+
+ST_4: tmp_40_i (74)  [1/1] 2.75ns  loc: cppSobel/.settings/sobel.cpp:83
+:2  %tmp_40_i = add i7 %tmp_3_cast_i, 32
+
+ST_4: tmp_40_cast_i (75)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:83
+:3  %tmp_40_cast_i = zext i7 %tmp_40_i to i64
+
+ST_4: line_buffer_addr (76)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:83
+:4  %line_buffer_addr = getelementptr [96 x i8]* @line_buffer, i64 0, i64 %tmp_40_cast_i
+
+ST_4: line_buffer_load (80)  [2/2] 2.30ns  loc: cppSobel/.settings/sobel.cpp:83
+:8  %line_buffer_load = load i8* %line_buffer_addr, align 1
+
+
+ <State 5>: 4.64ns
+ST_5: tmp_37_cast_i (54)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:76
+:4  %tmp_37_cast_i = sext i5 %tmp_37_i to i64
+
+ST_5: window_buffer_addr_1 (58)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:76
+:8  %window_buffer_addr_1 = getelementptr [9 x i8]* @window_buffer, i64 0, i64 %tmp_37_cast_i
+
+ST_5: window_buffer_load (62)  [1/2] 2.32ns  loc: cppSobel/.settings/sobel.cpp:76
+:12  %window_buffer_load = load i8* %window_buffer_addr, align 1
+
+ST_5: StgValue_75 (63)  [1/1] 2.32ns  loc: cppSobel/.settings/sobel.cpp:76
+:13  store i8 %window_buffer_load, i8* %window_buffer_addr_1, align 1
+
+ST_5: window_buffer_load_1 (64)  [1/2] 2.32ns  loc: cppSobel/.settings/sobel.cpp:77
+:14  %window_buffer_load_1 = load i8* %window_buffer_addr_2, align 1
+
+ST_5: StgValue_77 (65)  [1/1] 2.32ns  loc: cppSobel/.settings/sobel.cpp:77
+:15  store i8 %window_buffer_load_1, i8* %window_buffer_addr, align 1
+
+ST_5: StgValue_78 (66)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:75
+:16  br label %3
+
+
+ <State 6>: 4.61ns
+ST_6: tmp_3_i (72)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:83
+:0  %tmp_3_i = zext i6 %col_i to i64
+
+ST_6: line_buffer_addr_1 (77)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:83
+:5  %line_buffer_addr_1 = getelementptr [96 x i8]* @line_buffer, i64 0, i64 %tmp_3_i
+
+ST_6: tmp_41_i (78)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:84
+:6  %tmp_41_i = call i64 @_ssdm_op_BitConcatenate.i64.i58.i6(i58 1, i6 %col_i)
+
+ST_6: line_buffer_addr_2 (79)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:84
+:7  %line_buffer_addr_2 = getelementptr [96 x i8]* @line_buffer, i64 0, i64 %tmp_41_i
+
+ST_6: line_buffer_load (80)  [1/2] 2.30ns  loc: cppSobel/.settings/sobel.cpp:83
+:8  %line_buffer_load = load i8* %line_buffer_addr, align 1
+
+ST_6: StgValue_84 (81)  [1/1] 2.30ns  loc: cppSobel/.settings/sobel.cpp:83
+:9  store i8 %line_buffer_load, i8* %line_buffer_addr_1, align 1
+
+ST_6: line_buffer_load_1 (82)  [2/2] 2.30ns  loc: cppSobel/.settings/sobel.cpp:84
+:10  %line_buffer_load_1 = load i8* %line_buffer_addr_2, align 1
+
+
+ <State 7>: 6.41ns
+ST_7: line_buffer_load_1 (82)  [1/2] 2.30ns  loc: cppSobel/.settings/sobel.cpp:84
+:10  %line_buffer_load_1 = load i8* %line_buffer_addr_2, align 1
+
+ST_7: StgValue_87 (83)  [1/1] 2.30ns  loc: cppSobel/.settings/sobel.cpp:84
+:11  store i8 %line_buffer_load_1, i8* %line_buffer_addr, align 1
+
+ST_7: tmp_i (84)  [1/1] 0.00ns  loc: /opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:617->cppSobel/.settings/sobel.cpp:85
+:12  %tmp_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str10459)
+
+ST_7: StgValue_89 (85)  [1/1] 0.00ns  loc: /opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:621->cppSobel/.settings/sobel.cpp:85
+:13  call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str10437) nounwind
+
+ST_7: tmp_4 (86)  [1/1] 2.32ns  loc: /opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:624->cppSobel/.settings/sobel.cpp:85
+:14  %tmp_4 = call i8 @_ssdm_op_Read.ap_fifo.volatile.i8P(i8* %img_0_data_stream_0)
+
+ST_7: empty (87)  [1/1] 0.00ns  loc: /opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:626->cppSobel/.settings/sobel.cpp:85
+:15  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str10459, i32 %tmp_i)
+
+ST_7: StgValue_92 (88)  [1/1] 2.30ns  loc: cppSobel/.settings/sobel.cpp:85
+:16  store i8 %tmp_4, i8* %line_buffer_addr_2, align 1
+
+ST_7: StgValue_93 (89)  [1/1] 1.77ns  loc: cppSobel/.settings/sobel.cpp:89
+:17  br label %0
+
+ST_7: storemerge5_i (91)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:83
+:0  %storemerge5_i = phi i8 [ %line_buffer_load, %1 ], [ 0, %2 ]
+
+ST_7: StgValue_95 (94)  [1/1] 2.32ns  loc: cppSobel/.settings/sobel.cpp:86
+:3  store i8 %storemerge5_i, i8* getelementptr inbounds ([9 x i8]* @window_buffer, i64 0, i64 2), align 1
+
+ST_7: tmp_10_i (97)  [1/1] 2.07ns  loc: cppSobel/.settings/sobel.cpp:96
+:6  %tmp_10_i = or i6 %output_col, %output_row
+
+ST_7: tmp_5 (98)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:96
+:7  %tmp_5 = call i1 @_ssdm_op_BitSelect.i1.i6.i32(i6 %tmp_10_i, i32 5)
+
+
+ <State 8>: 7.72ns
+ST_8: storemerge1_i (92)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:84
+:1  %storemerge1_i = phi i8 [ %line_buffer_load_1, %1 ], [ 0, %2 ]
+
+ST_8: storemerge_i (93)  [1/1] 0.00ns
+:2  %storemerge_i = phi i8 [ %tmp_4, %1 ], [ 0, %2 ]
+
+ST_8: StgValue_100 (95)  [1/1] 2.32ns  loc: cppSobel/.settings/sobel.cpp:86
+:4  store i8 %storemerge1_i, i8* getelementptr inbounds ([9 x i8]* @window_buffer, i64 0, i64 5), align 1
+
+ST_8: StgValue_101 (96)  [1/1] 2.32ns  loc: cppSobel/.settings/sobel.cpp:86
+:5  store i8 %storemerge_i, i8* getelementptr inbounds ([9 x i8]* @window_buffer, i64 0, i64 8), align 1
+
+ST_8: StgValue_102 (99)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:96
+:8  br i1 %tmp_5, label %._crit_edge.i, label %6
+
+ST_8: tmp_13_i (101)  [1/1] 3.88ns  loc: cppSobel/.settings/sobel.cpp:98
+:0  %tmp_13_i = icmp eq i6 %output_col, 0
+
+ST_8: tmp_14_i (102)  [1/1] 3.88ns  loc: cppSobel/.settings/sobel.cpp:98
+:1  %tmp_14_i = icmp eq i6 %output_col, %tmp_2_i
+
+ST_8: tmp1_i (103)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:98 (grouped into LUT with out node or_cond8_i)
+:2  %tmp1_i = or i1 %tmp_5_i, %tmp_13_i
+
+ST_8: tmp2_i (104)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:98 (grouped into LUT with out node or_cond8_i)
+:3  %tmp2_i = or i1 %tmp_6_i, %tmp_14_i
+
+ST_8: or_cond8_i (105)  [1/1] 2.07ns  loc: cppSobel/.settings/sobel.cpp:98 (out node of the LUT)
+:4  %or_cond8_i = or i1 %tmp2_i, %tmp1_i
+
+ST_8: StgValue_108 (106)  [1/1] 1.77ns  loc: cppSobel/.settings/sobel.cpp:98
+:5  br i1 %or_cond8_i, label %._crit_edge9.i, label %.preheader5.i.preheader
+
+ST_8: StgValue_109 (108)  [1/1] 1.77ns  loc: cppSobel/.settings/sobel.cpp:104
+.preheader5.i.preheader:0  br label %.preheader5.i
+
+
+ <State 9>: 5.83ns
+ST_9: y_dir_i (110)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:107
+.preheader5.i:0  %y_dir_i = phi i16 [ %y_dir_1_i, %.preheader5.i.loopexit ], [ 0, %.preheader5.i.preheader ]
+
+ST_9: x_dir_i (111)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:106
+.preheader5.i:1  %x_dir_i = phi i16 [ %x_dir_1_i, %.preheader5.i.loopexit ], [ 0, %.preheader5.i.preheader ]
+
+ST_9: i_i (112)  [1/1] 0.00ns
+.preheader5.i:2  %i_i = phi i2 [ %i, %.preheader5.i.loopexit ], [ 0, %.preheader5.i.preheader ]
+
+ST_9: exitcond1_i (113)  [1/1] 2.07ns  loc: cppSobel/.settings/sobel.cpp:104
+.preheader5.i:3  %exitcond1_i = icmp eq i2 %i_i, -1
+
+ST_9: StgValue_114 (114)  [1/1] 0.00ns
+.preheader5.i:4  call void (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
+
+ST_9: i (115)  [1/1] 2.45ns  loc: cppSobel/.settings/sobel.cpp:104
+.preheader5.i:5  %i = add i2 %i_i, 1
+
+ST_9: StgValue_116 (116)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:104
+.preheader5.i:6  br i1 %exitcond1_i, label %7, label %.preheader.preheader.i
+
+ST_9: tmp_25_cast_i (118)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:104
+.preheader.preheader.i:0  %tmp_25_cast_i = zext i2 %i_i to i5
+
+ST_9: tmp_42_i (119)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:104
+.preheader.preheader.i:1  %tmp_42_i = call i4 @_ssdm_op_BitConcatenate.i4.i2.i2(i2 %i_i, i2 0)
+
+ST_9: p_shl1_cast_i (120)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:106
+.preheader.preheader.i:2  %p_shl1_cast_i = zext i4 %tmp_42_i to i5
+
+ST_9: tmp_43_i (121)  [1/1] 2.62ns  loc: cppSobel/.settings/sobel.cpp:106
+.preheader.preheader.i:3  %tmp_43_i = sub i5 %p_shl1_cast_i, %tmp_25_cast_i
+
+ST_9: StgValue_121 (122)  [1/1] 1.77ns  loc: cppSobel/.settings/sobel.cpp:105
+.preheader.preheader.i:4  br label %.preheader.i
+
+ST_9: tmp_15_i (154)  [1/1] 3.03ns  loc: cppSobel/.settings/sobel.cpp:110
+:0  %tmp_15_i = icmp sgt i16 %x_dir_i, 0
+
+ST_9: tmp_6 (155)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:110
+:1  %tmp_6 = trunc i16 %x_dir_i to i8
+
+ST_9: tmp_17_i (156)  [1/1] 2.80ns  loc: cppSobel/.settings/sobel.cpp:110
+:2  %tmp_17_i = sub i8 0, %tmp_6
+
+ST_9: tmp_18_i (157)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:110 (grouped into LUT with out node tmp_23_i)
+:3  %tmp_18_i = select i1 %tmp_15_i, i8 %tmp_6, i8 %tmp_17_i
+
+ST_9: tmp_19_i (158)  [1/1] 3.03ns  loc: cppSobel/.settings/sobel.cpp:110
+:4  %tmp_19_i = icmp sgt i16 %y_dir_i, 0
+
+ST_9: tmp_7 (159)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:110
+:5  %tmp_7 = trunc i16 %y_dir_i to i8
+
+ST_9: tmp_21_i (160)  [1/1] 2.80ns  loc: cppSobel/.settings/sobel.cpp:110
+:6  %tmp_21_i = sub i8 0, %tmp_7
+
+ST_9: tmp_22_i (161)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:110 (grouped into LUT with out node tmp_23_i)
+:7  %tmp_22_i = select i1 %tmp_19_i, i8 %tmp_7, i8 %tmp_21_i
+
+ST_9: tmp_23_i (162)  [1/1] 2.80ns  loc: cppSobel/.settings/sobel.cpp:111 (out node of the LUT)
+:8  %tmp_23_i = add i8 %tmp_22_i, %tmp_18_i
+
+
+ <State 10>: 5.92ns
+ST_10: y_dir_1_i (124)  [1/1] 0.00ns
+.preheader.i:0  %y_dir_1_i = phi i16 [ %y_dir, %8 ], [ %y_dir_i, %.preheader.preheader.i ]
+
+ST_10: x_dir_1_i (125)  [1/1] 0.00ns
+.preheader.i:1  %x_dir_1_i = phi i16 [ %x_dir, %8 ], [ %x_dir_i, %.preheader.preheader.i ]
+
+ST_10: j_i (126)  [1/1] 0.00ns
+.preheader.i:2  %j_i = phi i2 [ %j, %8 ], [ 0, %.preheader.preheader.i ]
+
+ST_10: exitcond_i (127)  [1/1] 2.07ns  loc: cppSobel/.settings/sobel.cpp:105
+.preheader.i:3  %exitcond_i = icmp eq i2 %j_i, -1
+
+ST_10: StgValue_135 (128)  [1/1] 0.00ns
+.preheader.i:4  call void (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
+
+ST_10: j (129)  [1/1] 2.45ns  loc: cppSobel/.settings/sobel.cpp:105
+.preheader.i:5  %j = add i2 %j_i, 1
+
+ST_10: StgValue_137 (130)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:105
+.preheader.i:6  br i1 %exitcond_i, label %.preheader5.i.loopexit, label %8
+
+ST_10: tmp_29_cast_i (132)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:106
+:0  %tmp_29_cast_i = zext i2 %j_i to i5
+
+ST_10: tmp_44_i (133)  [1/1] 2.66ns  loc: cppSobel/.settings/sobel.cpp:106
+:1  %tmp_44_i = add i5 %tmp_43_i, %tmp_29_cast_i
+
+ST_10: tmp_44_cast_i (134)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:106
+:2  %tmp_44_cast_i = sext i5 %tmp_44_i to i64
+
+ST_10: window_buffer_addr_3 (135)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:106
+:3  %window_buffer_addr_3 = getelementptr [9 x i8]* @window_buffer, i64 0, i64 %tmp_44_cast_i
+
+ST_10: Gx_addr (136)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:106
+:4  %Gx_addr = getelementptr [9 x i3]* @Gx, i64 0, i64 %tmp_44_cast_i
+
+ST_10: Gy_addr (137)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:107
+:5  %Gy_addr = getelementptr [9 x i3]* @Gy, i64 0, i64 %tmp_44_cast_i
+
+ST_10: window_buffer_load_2 (138)  [2/2] 2.32ns  loc: cppSobel/.settings/sobel.cpp:106
+:6  %window_buffer_load_2 = load i8* %window_buffer_addr_3, align 1
+
+ST_10: Gx_load (140)  [2/2] 3.25ns  loc: cppSobel/.settings/sobel.cpp:106
+:8  %Gx_load = load i3* %Gx_addr, align 1
+
+ST_10: Gy_load (145)  [2/2] 3.25ns  loc: cppSobel/.settings/sobel.cpp:107
+:13  %Gy_load = load i3* %Gy_addr, align 1
+
+ST_10: StgValue_147 (152)  [1/1] 0.00ns
+.preheader5.i.loopexit:0  br label %.preheader5.i
+
+
+ <State 11>: 3.25ns
+ST_11: window_buffer_load_2 (138)  [1/2] 2.32ns  loc: cppSobel/.settings/sobel.cpp:106
+:6  %window_buffer_load_2 = load i8* %window_buffer_addr_3, align 1
+
+ST_11: Gx_load (140)  [1/2] 3.25ns  loc: cppSobel/.settings/sobel.cpp:106
+:8  %Gx_load = load i3* %Gx_addr, align 1
+
+ST_11: Gy_load (145)  [1/2] 3.25ns  loc: cppSobel/.settings/sobel.cpp:107
+:13  %Gy_load = load i3* %Gy_addr, align 1
+
+
+ <State 12>: 6.38ns
+ST_12: tmp_30_cast_i (139)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:106
+:7  %tmp_30_cast_i = zext i8 %window_buffer_load_2 to i12
+
+ST_12: tmp_32_cast_i (141)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:106
+:9  %tmp_32_cast_i = sext i3 %Gx_load to i12
+
+ST_12: tmp_33_i (142)  [1/1] 3.36ns  loc: cppSobel/.settings/sobel.cpp:106
+:10  %tmp_33_i = mul i12 %tmp_32_cast_i, %tmp_30_cast_i
+
+ST_12: tmp_33_cast_i (143)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:106
+:11  %tmp_33_cast_i = sext i12 %tmp_33_i to i16
+
+ST_12: x_dir (144)  [1/1] 3.02ns  loc: cppSobel/.settings/sobel.cpp:106
+:12  %x_dir = add i16 %x_dir_1_i, %tmp_33_cast_i
+
+ST_12: tmp_34_cast_i (146)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:107
+:14  %tmp_34_cast_i = sext i3 %Gy_load to i12
+
+ST_12: tmp_35_i (147)  [1/1] 3.36ns  loc: cppSobel/.settings/sobel.cpp:107
+:15  %tmp_35_i = mul i12 %tmp_34_cast_i, %tmp_30_cast_i
+
+ST_12: tmp_35_cast_i (148)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:107
+:16  %tmp_35_cast_i = sext i12 %tmp_35_i to i16
+
+ST_12: y_dir (149)  [1/1] 3.02ns  loc: cppSobel/.settings/sobel.cpp:107
+:17  %y_dir = add i16 %y_dir_1_i, %tmp_35_cast_i
+
+ST_12: StgValue_160 (150)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:105
+:18  br label %.preheader.i
+
+
+ <State 13>: 6.75ns
+ST_13: edge_val (163)  [1/1] 2.07ns  loc: cppSobel/.settings/sobel.cpp:111
+:9  %edge_val = xor i8 %tmp_23_i, -1
+
+ST_13: tmp_24_i (164)  [1/1] 2.91ns  loc: cppSobel/.settings/sobel.cpp:112
+:10  %tmp_24_i = icmp ult i8 %tmp_23_i, 55
+
+ST_13: StgValue_163 (165)  [1/1] 1.77ns  loc: cppSobel/.settings/sobel.cpp:112
+:11  br i1 %tmp_24_i, label %._crit_edge9.i, label %9
+
+ST_13: tmp_26_i (167)  [1/1] 2.91ns  loc: cppSobel/.settings/sobel.cpp:114
+:0  %tmp_26_i = icmp ugt i8 %tmp_23_i, -51
+
+ST_13: p_i (168)  [1/1] 2.07ns  loc: cppSobel/.settings/sobel.cpp:114
+:1  %p_i = select i1 %tmp_26_i, i8 -1, i8 %edge_val
+
+ST_13: StgValue_166 (169)  [1/1] 1.77ns
+:2  br label %._crit_edge9.i
+
+
+ <State 14>: 2.32ns
+ST_14: tmp_8 (171)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:114
+._crit_edge9.i:0  %tmp_8 = phi i8 [ %p_i, %9 ], [ 0, %6 ], [ 0, %7 ]
+
+ST_14: tmp_28_i (172)  [1/1] 0.00ns  loc: /opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:641->/opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:662->cppSobel/.settings/sobel.cpp:120
+._crit_edge9.i:1  %tmp_28_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([13 x i8]* @p_str10456)
+
+ST_14: StgValue_169 (173)  [1/1] 0.00ns  loc: /opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:645->/opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:662->cppSobel/.settings/sobel.cpp:120
+._crit_edge9.i:2  call void (...)* @_ssdm_op_SpecProtocol(i32 0, [1 x i8]* @p_str10437) nounwind
+
+ST_14: StgValue_170 (174)  [1/1] 2.32ns  loc: /opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:648->/opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:662->cppSobel/.settings/sobel.cpp:120
+._crit_edge9.i:3  call void @_ssdm_op_Write.ap_fifo.volatile.i8P(i8* %img_1_data_stream_0, i8 %tmp_8)
+
+ST_14: empty_25 (175)  [1/1] 0.00ns  loc: /opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:650->/opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:662->cppSobel/.settings/sobel.cpp:120
+._crit_edge9.i:4  %empty_25 = call i32 (...)* @_ssdm_op_SpecRegionEnd([13 x i8]* @p_str10456, i32 %tmp_28_i)
+
+ST_14: StgValue_172 (176)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:121
+._crit_edge9.i:5  br label %._crit_edge.i
+
+ST_14: StgValue_173 (178)  [1/1] 0.00ns  loc: cppSobel/.settings/sobel.cpp:66
+._crit_edge.i:0  br label %.preheader6.i
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 2.71ns
+The critical path consists of the following:
+	wire read on port 'cols' [9]  (0 ns)
+	'add' operation ('tmp_2_i', cppSobel/.settings/sobel.cpp:98) [18]  (2.71 ns)
+
+ <State 2>: 6.59ns
+The critical path consists of the following:
+	'phi' operation ('row') with incoming values : ('row', cppSobel/.settings/sobel.cpp:65) [23]  (0 ns)
+	'add' operation ('output_row', cppSobel/.settings/sobel.cpp:71) [29]  (2.71 ns)
+	'icmp' operation ('tmp_5_i', cppSobel/.settings/sobel.cpp:98) [31]  (3.88 ns)
+
+ <State 3>: 3.88ns
+The critical path consists of the following:
+	'phi' operation ('col') with incoming values : ('col', cppSobel/.settings/sobel.cpp:66) [35]  (0 ns)
+	'icmp' operation ('exitcond3_i', cppSobel/.settings/sobel.cpp:66) [37]  (3.88 ns)
+
+ <State 4>: 7.72ns
+The critical path consists of the following:
+	'icmp' operation ('tmp_8_i', cppSobel/.settings/sobel.cpp:82) [68]  (3.88 ns)
+	'and' operation ('or_cond_i', cppSobel/.settings/sobel.cpp:82) [69]  (2.07 ns)
+	multiplexor before 'phi' operation ('storemerge5_i', cppSobel/.settings/sobel.cpp:83) with incoming values : ('line_buffer_load', cppSobel/.settings/sobel.cpp:83) [91]  (1.77 ns)
+
+ <State 5>: 4.64ns
+The critical path consists of the following:
+	'load' operation ('window_buffer_load', cppSobel/.settings/sobel.cpp:76) on array 'window_buffer' [62]  (2.32 ns)
+	'store' operation (cppSobel/.settings/sobel.cpp:76) of variable 'window_buffer_load', cppSobel/.settings/sobel.cpp:76 on array 'window_buffer' [63]  (2.32 ns)
+
+ <State 6>: 4.61ns
+The critical path consists of the following:
+	'load' operation ('line_buffer_load', cppSobel/.settings/sobel.cpp:83) on array 'line_buffer' [80]  (2.3 ns)
+	'store' operation (cppSobel/.settings/sobel.cpp:83) of variable 'line_buffer_load', cppSobel/.settings/sobel.cpp:83 on array 'line_buffer' [81]  (2.3 ns)
+
+ <State 7>: 6.41ns
+The critical path consists of the following:
+	fifo read on port 'img_0_data_stream_0' (/opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:624->cppSobel/.settings/sobel.cpp:85) [86]  (2.32 ns)
+	multiplexor before 'phi' operation ('storemerge5_i', cppSobel/.settings/sobel.cpp:83) with incoming values : ('line_buffer_load', cppSobel/.settings/sobel.cpp:83) [91]  (1.77 ns)
+	'phi' operation ('storemerge5_i', cppSobel/.settings/sobel.cpp:83) with incoming values : ('line_buffer_load', cppSobel/.settings/sobel.cpp:83) [91]  (0 ns)
+	'store' operation (cppSobel/.settings/sobel.cpp:86) of variable 'storemerge5_i', cppSobel/.settings/sobel.cpp:83 on array 'window_buffer' [94]  (2.32 ns)
+
+ <State 8>: 7.72ns
+The critical path consists of the following:
+	'icmp' operation ('tmp_13_i', cppSobel/.settings/sobel.cpp:98) [101]  (3.88 ns)
+	'or' operation ('tmp1_i', cppSobel/.settings/sobel.cpp:98) [103]  (0 ns)
+	'or' operation ('or_cond8_i', cppSobel/.settings/sobel.cpp:98) [105]  (2.07 ns)
+	multiplexor before 'phi' operation ('tmp', cppSobel/.settings/sobel.cpp:114) with incoming values : ('p_i', cppSobel/.settings/sobel.cpp:114) [171]  (1.77 ns)
+
+ <State 9>: 5.83ns
+The critical path consists of the following:
+	'phi' operation ('y_dir_i', cppSobel/.settings/sobel.cpp:107) with incoming values : ('y_dir', cppSobel/.settings/sobel.cpp:107) [110]  (0 ns)
+	'icmp' operation ('tmp_19_i', cppSobel/.settings/sobel.cpp:110) [158]  (3.03 ns)
+	'select' operation ('tmp_22_i', cppSobel/.settings/sobel.cpp:110) [161]  (0 ns)
+	'add' operation ('tmp_23_i', cppSobel/.settings/sobel.cpp:111) [162]  (2.8 ns)
+
+ <State 10>: 5.92ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', cppSobel/.settings/sobel.cpp:105) [126]  (0 ns)
+	'add' operation ('tmp_44_i', cppSobel/.settings/sobel.cpp:106) [133]  (2.66 ns)
+	'getelementptr' operation ('Gx_addr', cppSobel/.settings/sobel.cpp:106) [136]  (0 ns)
+	'load' operation ('Gx_load', cppSobel/.settings/sobel.cpp:106) on array 'Gx' [140]  (3.25 ns)
+
+ <State 11>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('Gx_load', cppSobel/.settings/sobel.cpp:106) on array 'Gx' [140]  (3.25 ns)
+
+ <State 12>: 6.38ns
+The critical path consists of the following:
+	'mul' operation ('tmp_33_i', cppSobel/.settings/sobel.cpp:106) [142]  (3.36 ns)
+	'add' operation ('x_dir', cppSobel/.settings/sobel.cpp:106) [144]  (3.02 ns)
+
+ <State 13>: 6.75ns
+The critical path consists of the following:
+	'icmp' operation ('tmp_26_i', cppSobel/.settings/sobel.cpp:114) [167]  (2.91 ns)
+	'select' operation ('p_i', cppSobel/.settings/sobel.cpp:114) [168]  (2.07 ns)
+	multiplexor before 'phi' operation ('tmp', cppSobel/.settings/sobel.cpp:114) with incoming values : ('p_i', cppSobel/.settings/sobel.cpp:114) [171]  (1.77 ns)
+
+ <State 14>: 2.32ns
+The critical path consists of the following:
+	'phi' operation ('tmp', cppSobel/.settings/sobel.cpp:114) with incoming values : ('p_i', cppSobel/.settings/sobel.cpp:114) [171]  (0 ns)
+	fifo write on port 'img_1_data_stream_0' (/opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:648->/opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_core.h:662->cppSobel/.settings/sobel.cpp:120) [174]  (2.32 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

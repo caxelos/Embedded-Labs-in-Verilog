@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-303] Cannot apply resource assignment of 'AXI_SLAVE' on 'tmp', which is not a function parameter or a function." projectName="cppSobel" solutionName="solution1" date="2017-09-28T18:05:21.171+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-303] Cannot apply resource assignment of 'AXI_SLAVE' on 'tmp_1', which is not a function parameter or a function." projectName="cppSobel" solutionName="solution1" date="2017-09-28T18:05:21.167+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-303] Cannot apply resource assignment of 'AXI_SLAVE' on 'tmp', which is not a function parameter or a function." projectName="cppSobel" solutionName="solution1" date="2017-09-28T18:05:21.123+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-303] Cannot apply resource assignment of 'AXI_SLAVE' on 'tmp_3', which is not a function parameter or a function." projectName="cppSobel" solutionName="solution1" date="2017-09-28T18:05:21.118+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-303] Cannot apply resource assignment of 'AXI_SLAVE' on 'tmp', which is not a function parameter or a function." projectName="cppSobel" solutionName="solution1" date="2017-09-28T18:05:21.024+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-303] Cannot apply resource assignment of 'AXI_SLAVE' on 'tmp_9', which is not a function parameter or a function." projectName="cppSobel" solutionName="solution1" date="2017-09-28T18:05:20.862+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo&lt;32, 32, 32, 0>' (/opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_io.h:78:50) into Mat2AXIvideo." projectName="cppSobel" solutionName="solution1" date="2017-09-28T18:05:20.771+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat&lt;32, 32, 32, 0>' (/opt/Xilinx/Vivado_HLS/2017.1/common/technology/autopilot/hls/hls_video_io.h:49:9) into AXIvideo2Mat." projectName="cppSobel" solutionName="solution1" date="2017-09-28T18:05:17.450+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'tmp.37': cannot find another array to be merged with." projectName="cppSobel" solutionName="solution1" date="2017-09-28T18:05:13.351+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'tmp.5': cannot find another array to be merged with." projectName="cppSobel" solutionName="solution1" date="2017-09-28T18:05:13.346+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-152] Cannot apply array mapping directives with instance name 'tmp.2': cannot find another array to be merged with." projectName="cppSobel" solutionName="solution1" date="2017-09-28T18:05:13.343+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img_1.data_stream.V' (cppSobel/.settings/sobel.cpp:36)." projectName="cppSobel" solutionName="solution1" date="2017-09-28T18:05:13.328+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img_0.data_stream.V' (cppSobel/.settings/sobel.cpp:35)." projectName="cppSobel" solutionName="solution1" date="2017-09-28T18:05:13.297+0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

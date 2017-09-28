@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sobel.h" path="/home/trakaros/sobel.h"/>
+    <originFiles name="sobel.cpp" path="/home/trakaros/tou_nikou/cppSobel/.settings/sobel.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_sobel.cpp" path="/home/trakaros/test_sobel.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
