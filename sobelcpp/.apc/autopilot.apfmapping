@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sobel.cpp" path="/home/trakaros/Embedded-Labs-in-Verilog/cppSobel/src/sobel.cpp"/>
+    <originFiles name="sobel.h" path="/home/trakaros/Embedded-Labs-in-Verilog/cppSobel/src/sobel.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test_sobel.cpp" path="/home/trakaros/Embedded-Labs-in-Verilog/cppSobel/src/test_sobel.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
